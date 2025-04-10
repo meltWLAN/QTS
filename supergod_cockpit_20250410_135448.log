@@ -1,0 +1,71 @@
+2025-04-10 13:54:48,249 - CockpitLauncher - INFO - 启动超神量子共生系统驾驶舱模式...
+2025-04-10 13:55:04,393 - SupergodCockpit - INFO - 成功加载超神分析引擎模块
+2025-04-10 13:55:04,396 - ChinaMarketCore - INFO - 初始化中国市场分析核心...
+2025-04-10 13:55:04,396 - ChinaMarketCore - INFO - 使用默认配置
+2025-04-10 13:55:04,396 - ChinaMarketCore - INFO - 异常检测模型初始化完成
+2025-04-10 13:55:04,396 - ChinaMarketCore - INFO - 中国市场分析核心初始化完成
+2025-04-10 13:55:04,396 - SupergodCockpit - INFO - 已加载市场分析核心
+2025-04-10 13:55:04,396 - PolicyAnalyzer - INFO - 初始化政策分析器...
+2025-04-10 13:55:04,396 - PolicyAnalyzer - INFO - 分词器初始化完成
+2025-04-10 13:55:04,396 - PolicyAnalyzer - INFO - 政策分析器初始化完成
+2025-04-10 13:55:04,397 - SupergodCockpit - INFO - 已加载政策分析器
+2025-04-10 13:55:04,397 - SectorRotationTracker - INFO - 初始化板块轮动跟踪器...
+2025-04-10 13:55:04,397 - SectorRotationTracker - INFO - 板块轮动跟踪器初始化完成
+2025-04-10 13:55:04,397 - SupergodCockpit - INFO - 已加载板块轮动追踪器
+2025-04-10 13:55:04,397 - ChaosTheory - INFO - 混沌理论分析器初始化完成
+2025-04-10 13:55:04,397 - SupergodCockpit - INFO - 已加载混沌理论分析器
+2025-04-10 13:55:04,397 - SupergodCockpit - INFO - 已加载量子维度增强器
+2025-04-10 13:55:04,397 - SupergodCockpit - INFO - 设置UI界面...
+2025-04-10 13:55:05,694 - SupergodCockpit - INFO - UI界面设置完成
+2025-04-10 13:55:05,742 - SupergodCockpit - INFO - 已加载演示数据: 100 行
+2025-04-10 13:55:05,743 - SupergodCockpit - INFO - 开始量子分析任务...
+2025-04-10 13:55:05,743 - SupergodCockpit - INFO - 使用核心模块进行分析...
+2025-04-10 13:55:05,743 - ChinaMarketCore - INFO - 开始分析市场状态...
+2025-04-10 13:55:05,750 - ChinaMarketCore - INFO - 市场状态分析完成，当前周期: MARKDOWN
+2025-04-10 13:55:05,750 - SupergodCockpit - INFO - 市场分析完成: 未知
+2025-04-10 13:55:05,750 - PolicyAnalyzer - INFO - 开始分析政策环境...
+2025-04-10 13:55:05,751 - PolicyAnalyzer - WARNING - 未提供政策数据，使用历史状态
+2025-04-10 13:55:05,752 - SupergodCockpit - INFO - 政策分析完成: 未知
+2025-04-10 13:55:05,752 - SupergodCockpit - ERROR - 板块轮动分析失败: 'SectorRotationTracker' object has no attribute 'track_rotation'
+2025-04-10 13:55:05,752 - SupergodCockpit - ERROR - 混沌分析失败: 'ChaosTheoryAnalyzer' object has no attribute 'analyze_chaos_state'
+2025-04-10 13:55:05,753 - QuantumDimensionExpander - INFO - 初始化量子维度扩展器: 11 -> 21
+2025-04-10 13:55:05,754 - QuantumDimensionExpander - INFO - 量子维度扩展器初始化完成
+2025-04-10 13:55:05,758 - QuantumDimensionExpander - INFO - 量子维度增强器初始化完成，增强级别: 10
+2025-04-10 13:55:05,759 - QuantumDimensionExpander - INFO - 开始精确量子维度扩展
+2025-04-10 13:55:05,760 - QuantumDimensionExpander - WARNING - 输入向量维度不匹配: 预期11, 实际100
+2025-04-10 13:55:05,761 - SupergodCockpit - ERROR - 量子维度增强失败: only length-1 arrays can be converted to Python scalars
+2025-04-10 13:55:07,714 - CockpitLauncher - WARNING - 数据连接器初始化失败: No module named 'tushare_data_connector'
+2025-04-10 13:55:08,159 - CockpitLauncher - INFO - 驾驶舱启动成功
+2025-04-10 13:55:08,550 - SupergodCockpit - INFO - 已启动定时更新
+2025-04-10 13:55:08,551 - SupergodCockpit - INFO - 已启动特效更新
+2025-04-10 13:55:09,054 - SupergodCockpit - INFO - 开始量子分析任务...
+2025-04-10 13:55:09,054 - SupergodCockpit - INFO - 使用核心模块进行分析...
+2025-04-10 13:55:09,054 - ChinaMarketCore - INFO - 开始分析市场状态...
+2025-04-10 13:55:09,065 - ChinaMarketCore - INFO - 市场状态分析完成，当前周期: MARKDOWN
+2025-04-10 13:55:09,066 - SupergodCockpit - INFO - 市场分析完成: 未知
+2025-04-10 13:55:09,067 - PolicyAnalyzer - INFO - 开始分析政策环境...
+2025-04-10 13:55:09,069 - PolicyAnalyzer - WARNING - 未提供政策数据，使用历史状态
+2025-04-10 13:55:09,069 - SupergodCockpit - INFO - 政策分析完成: 未知
+2025-04-10 13:55:09,069 - SupergodCockpit - ERROR - 板块轮动分析失败: 'SectorRotationTracker' object has no attribute 'track_rotation'
+2025-04-10 13:55:09,070 - SupergodCockpit - ERROR - 混沌分析失败: 'ChaosTheoryAnalyzer' object has no attribute 'analyze_chaos_state'
+2025-04-10 13:55:09,070 - QuantumDimensionExpander - INFO - 开始精确量子维度扩展
+2025-04-10 13:55:09,070 - QuantumDimensionExpander - WARNING - 输入向量维度不匹配: 预期11, 实际100
+2025-04-10 13:55:09,075 - SupergodCockpit - ERROR - 量子维度增强失败: only length-1 arrays can be converted to Python scalars
+2025-04-10 13:55:31,050 - SupergodCockpit - INFO - 尝试同步市场数据
+2025-04-10 13:55:32,489 - SupergodCockpit - INFO - 刷新所有数据
+2025-04-10 13:55:32,494 - SupergodCockpit - INFO - 开始量子分析任务...
+2025-04-10 13:55:32,494 - SupergodCockpit - INFO - 使用核心模块进行分析...
+2025-04-10 13:55:32,494 - ChinaMarketCore - INFO - 开始分析市场状态...
+2025-04-10 13:55:32,509 - ChinaMarketCore - INFO - 市场状态分析完成，当前周期: MARKDOWN
+2025-04-10 13:55:32,509 - SupergodCockpit - INFO - 市场分析完成: 未知
+2025-04-10 13:55:32,510 - PolicyAnalyzer - INFO - 开始分析政策环境...
+2025-04-10 13:55:32,511 - PolicyAnalyzer - WARNING - 未提供政策数据，使用历史状态
+2025-04-10 13:55:32,511 - SupergodCockpit - INFO - 政策分析完成: 未知
+2025-04-10 13:55:32,512 - SupergodCockpit - ERROR - 板块轮动分析失败: 'SectorRotationTracker' object has no attribute 'track_rotation'
+2025-04-10 13:55:32,513 - SupergodCockpit - ERROR - 混沌分析失败: 'ChaosTheoryAnalyzer' object has no attribute 'analyze_chaos_state'
+2025-04-10 13:55:32,515 - QuantumDimensionExpander - INFO - 开始精确量子维度扩展
+2025-04-10 13:55:32,519 - QuantumDimensionExpander - WARNING - 输入向量维度不匹配: 预期11, 实际100
+2025-04-10 13:55:32,543 - SupergodCockpit - ERROR - 量子维度增强失败: only length-1 arrays can be converted to Python scalars
+2025-04-10 13:55:40,287 - SupergodCockpit - INFO - 驾驶舱正在关闭...
+2025-04-10 13:55:40,287 - SupergodCockpit - INFO - 安全停止驾驶舱...
+2025-04-10 13:55:40,287 - SupergodCockpit - INFO - 驾驶舱已安全停止

@@ -1,0 +1,181 @@
+{
+  "date": "20250410",
+  "leading_sectors": [
+    {
+      "code": "CNTS8",
+      "name": "高铁",
+      "change_pct": 3.08
+    },
+    {
+      "code": "CNTS4",
+      "name": "黄金概念",
+      "change_pct": 1.98
+    },
+    {
+      "code": "CNTS0",
+      "name": "鼠疫",
+      "change_pct": 0.27
+    },
+    {
+      "code": "CNTS9",
+      "name": "高送转预期",
+      "change_pct": 0.14
+    },
+    {
+      "code": "CNTS6",
+      "name": "鸡尾酒",
+      "change_pct": -0.31
+    }
+  ],
+  "lagging_sectors": [
+    {
+      "code": "CNTS7",
+      "name": "魔兽概念",
+      "change_pct": -0.37
+    },
+    {
+      "code": "CNTS3",
+      "name": "黄金水道",
+      "change_pct": -2.27
+    },
+    {
+      "code": "CNTS5",
+      "name": "黄光裕概念",
+      "change_pct": -2.73
+    },
+    {
+      "code": "CNTS1",
+      "name": "黑龙江自贸区",
+      "change_pct": -3.19
+    },
+    {
+      "code": "CNTS2",
+      "name": "黑洞概念",
+      "change_pct": -4.48
+    }
+  ],
+  "all_sectors": [
+    {
+      "ts_code": "CNTS8",
+      "name": "高铁",
+      "pct_chg": 3.08,
+      "concept_stocks": 68
+    },
+    {
+      "ts_code": "CNTS4",
+      "name": "黄金概念",
+      "pct_chg": 1.98,
+      "concept_stocks": 54
+    },
+    {
+      "ts_code": "CNTS0",
+      "name": "鼠疫",
+      "pct_chg": 0.27,
+      "concept_stocks": 5
+    },
+    {
+      "ts_code": "CNTS9",
+      "name": "高送转预期",
+      "pct_chg": 0.14,
+      "concept_stocks": 116
+    },
+    {
+      "ts_code": "CNTS6",
+      "name": "鸡尾酒",
+      "pct_chg": -0.31,
+      "concept_stocks": 3
+    },
+    {
+      "ts_code": "CNTS7",
+      "name": "魔兽概念",
+      "pct_chg": -0.37,
+      "concept_stocks": 4
+    },
+    {
+      "ts_code": "CNTS3",
+      "name": "黄金水道",
+      "pct_chg": -2.27,
+      "concept_stocks": 8
+    },
+    {
+      "ts_code": "CNTS5",
+      "name": "黄光裕概念",
+      "pct_chg": -2.73,
+      "concept_stocks": 3
+    },
+    {
+      "ts_code": "CNTS1",
+      "name": "黑龙江自贸区",
+      "pct_chg": -3.19,
+      "concept_stocks": 39
+    },
+    {
+      "ts_code": "CNTS2",
+      "name": "黑洞概念",
+      "pct_chg": -4.48,
+      "concept_stocks": 10
+    }
+  ],
+  "sectors": [
+    {
+      "ts_code": "CNTS8",
+      "name": "高铁",
+      "pct_chg": 3.08,
+      "concept_stocks": 68
+    },
+    {
+      "ts_code": "CNTS4",
+      "name": "黄金概念",
+      "pct_chg": 1.98,
+      "concept_stocks": 54
+    },
+    {
+      "ts_code": "CNTS0",
+      "name": "鼠疫",
+      "pct_chg": 0.27,
+      "concept_stocks": 5
+    },
+    {
+      "ts_code": "CNTS9",
+      "name": "高送转预期",
+      "pct_chg": 0.14,
+      "concept_stocks": 116
+    },
+    {
+      "ts_code": "CNTS6",
+      "name": "鸡尾酒",
+      "pct_chg": -0.31,
+      "concept_stocks": 3
+    },
+    {
+      "ts_code": "CNTS7",
+      "name": "魔兽概念",
+      "pct_chg": -0.37,
+      "concept_stocks": 4
+    },
+    {
+      "ts_code": "CNTS3",
+      "name": "黄金水道",
+      "pct_chg": -2.27,
+      "concept_stocks": 8
+    },
+    {
+      "ts_code": "CNTS5",
+      "name": "黄光裕概念",
+      "pct_chg": -2.73,
+      "concept_stocks": 3
+    },
+    {
+      "ts_code": "CNTS1",
+      "name": "黑龙江自贸区",
+      "pct_chg": -3.19,
+      "concept_stocks": 39
+    },
+    {
+      "ts_code": "CNTS2",
+      "name": "黑洞概念",
+      "pct_chg": -4.48,
+      "concept_stocks": 10
+    }
+  ]
+}

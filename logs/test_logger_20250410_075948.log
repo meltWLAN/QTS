@@ -1,0 +1,14 @@
+2025-04-10 07:59:48,315 - src.utils.logger - INFO - 日志系统初始化完成，日志文件: /Users/mac/Desktop/QTS/logs/test_logger_20250410_075948.log
+2025-04-10 07:59:48,316 - src.utils.logger - DEBUG - Python版本: 3.10.12 (main, Jan 22 2025, 22:32:52) [Clang 16.0.0 (clang-1600.0.26.6)]
+2025-04-10 07:59:48,316 - src.utils.logger - DEBUG - 工作目录: /Users/mac/Desktop/QTS
+2025-04-10 07:59:48,316 - __main__ - DEBUG - 这是来自测试脚本的调试日志
+2025-04-10 07:59:48,317 - __main__ - INFO - 这是来自测试脚本的信息日志
+2025-04-10 07:59:48,317 - __main__ - WARNING - 这是来自测试脚本的警告日志
+2025-04-10 07:59:48,317 - __main__ - ERROR - 这是来自测试脚本的错误日志
+2025-04-10 07:59:48,318 - __main__ - CRITICAL - 这是来自测试脚本的严重错误日志
+2025-04-10 07:59:48,318 - __main__ - ERROR - 捕获到异常: division by zero
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/QTS/test_logger.py", line 26, in main
+    x = 1 / 0
+ZeroDivisionError: division by zero
+2025-04-10 07:59:48,319 - __main__ - INFO - 日志测试完成

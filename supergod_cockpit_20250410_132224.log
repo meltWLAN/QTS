@@ -1,0 +1,10 @@
+2025-04-10 13:22:24,020 - CockpitLauncher - INFO - 启动超神量子共生系统驾驶舱模式...
+2025-04-10 13:22:41,660 - SupergodCockpit - INFO - 成功加载超神分析引擎模块
+2025-04-10 13:22:41,664 - CockpitLauncher - ERROR - 启动驾驶舱失败: 'SupergodCockpit' object has no attribute '_apply_special_effects'
+2025-04-10 13:22:41,671 - CockpitLauncher - ERROR - Traceback (most recent call last):
+  File "/Users/mac/Desktop/QTS/launch_cockpit.py", line 51, in main
+    cockpit = SupergodCockpit()
+  File "/Users/mac/Desktop/FL/supergod_cockpit.py", line 1230, in __init__
+    self.apply_effects_signal.connect(self._apply_special_effects)
+AttributeError: 'SupergodCockpit' object has no attribute '_apply_special_effects'
+

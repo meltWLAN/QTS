@@ -1,0 +1,9 @@
+2025-04-10 13:24:08,796 - CockpitLauncher - INFO - 正在使用桌面版作为驾驶舱模式的替代启动...
+2025-04-10 13:24:08,796 - CockpitLauncher - INFO - 切换到目录: SuperQuantumNetwork/backup_current
+2025-04-10 13:24:08,797 - CockpitLauncher - INFO - 正在启动桌面版...
+2025-04-10 13:24:09,365 - CockpitLauncher - ERROR - 启动失败: No module named 'supergod_desktop'
+2025-04-10 13:24:09,367 - CockpitLauncher - ERROR - Traceback (most recent call last):
+  File "/Users/mac/Desktop/QTS/launch_cockpit_mode.py", line 61, in main
+    from supergod_desktop import SupergodDesktop
+ModuleNotFoundError: No module named 'supergod_desktop'
+

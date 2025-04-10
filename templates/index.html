@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量子核心系统仪表盘</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border: none;
+        }
+        .card-header {
+            background-color: #4527a0;
+            color: white;
+            border-radius: 10px 10px 0 0 !important;
+            padding: 15px 20px;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #4527a0;
+            border-color: #4527a0;
+        }
+        .btn-primary:hover {
+            background-color: #331b77;
+            border-color: #331b77;
+        }
+        .system-status {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .status-running {
+            background-color: #4caf50;
+        }
+        .status-stopped {
+            background-color: #f44336;
+        }
+        #circuitVisualization {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .quantum-state {
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            min-width: 80px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        .state-00 {
+            background-color: #2196F3;
+        }
+        .state-01 {
+            background-color: #FF9800;
+        }
+        .state-10 {
+            background-color: #9C27B0;
+        }
+        .state-11 {
+            background-color: #4CAF50;
+        }
+        #stockChart {
+            width: 100%;
+            height: 400px;
+        }
+        .custom-tooltip {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+        .quantum-signal {
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .signal-strong_buy {
+            background-color: #388e3c;
+        }
+        .signal-buy {
+            background-color: #8bc34a;
+        }
+        .signal-neutral {
+            background-color: #9e9e9e;
+        }
+        .signal-sell {
+            background-color: #ff9800;
+        }
+        .signal-strong_sell {
+            background-color: #d32f2f;
+        }
+        .strength-meter {
+            height: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #e0e0e0;
+            overflow: hidden;
+        }
+        .strength-value {
+            height: 100%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 20px;
+            transition: width 0.5s ease-in-out;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #4527a0 !important;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">量子核心系统仪表盘</a>
+            <div class="ms-auto">
+                <div id="systemStatusIndicator" class="d-flex align-items-center">
+                    <span class="system-status status-stopped"></span>
+                    <span id="systemStatusText">系统未启动</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">系统控制</div>
+                    <div class="card-body">
+                        <div class="d-flex gap-2">
+                            <button id="startSystem" class="btn btn-primary">启动系统</button>
+                            <button id="stopSystem" class="btn btn-danger" disabled>停止系统</button>
+                        </div>
+                        <div class="mt-3">
+                            <h5>组件状态</h5>
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>组件</th>
+                                            <th>状态</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="componentStatus">
+                                        <tr>
+                                            <td>量子后端</td>
+                                            <td><span class="system-status status-stopped"></span> 未启动</td>
+                                        </tr>
+                                        <tr>
+                                            <td>市场到量子转换器</td>
+                                            <td><span class="system-status status-stopped"></span> 未启动</td>
+                                        </tr>
+                                        <tr>
+                                            <td>量子解释器</td>
+                                            <td><span class="system-status status-stopped"></span> 未启动</td>
+                                        </tr>
+                                        <tr>
+                                            <td>市场分析器</td>
+                                            <td><span class="system-status status-stopped"></span> 未启动</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">量子电路演示</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <button id="createCircuit" class="btn btn-primary" disabled>创建Bell状态电路</button>
+                            <button id="executeCircuit" class="btn btn-success ms-2" disabled>执行电路</button>
+                        </div>
+                        <div id="circuitInfo" class="mb-3">
+                            <div class="alert alert-info">系统启动后可以创建和执行量子电路</div>
+                        </div>
+                        <div id="circuitVisualization" class="text-center mb-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Bell_state_circuit.svg" class="img-fluid" style="max-width: 300px;">
+                        </div>
+                        <div id="circuitResults" style="display: none;">
+                            <h5>量子电路执行结果</h5>
+                            <div id="quantumStateResults" class="d-flex justify-content-center flex-wrap gap-2 my-3"></div>
+                            <div id="quantumStateChart" style="height: 250px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">量子解释</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <button id="interpretResults" class="btn btn-primary" disabled>解释量子结果</button>
+                            <select id="interpretMethod" class="form-select d-inline-block ms-2" style="width: auto;" disabled>
+                                <option value="probability">概率解释</option>
+                                <option value="threshold">阈值解释</option>
+                            </select>
+                        </div>
+                        <div id="interpretationResults" style="display: none;">
+                            <h5>量子解释结果</h5>
+                            <div id="quantumSignal" class="quantum-signal">等待解释...</div>
+                            <div>
+                                <strong>信号强度:</strong>
+                                <div class="strength-meter">
+                                    <div id="strengthValue" class="strength-value" style="width: 0%; background-color: #9e9e9e;">0%</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-2"><strong>上升概率:</strong> <span id="upProbability">-</span></div>
+                                    <div><strong>下降概率:</strong> <span id="downProbability">-</span></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-2"><strong>最可能状态:</strong> <span id="mostProbableState">-</span></div>
+                                    <div><strong>解释方法:</strong> <span id="interpretationMethod">-</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-header">市场到量子转换</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <button id="convertMarketData" class="btn btn-primary" disabled>转换市场数据</button>
+                            <select id="convertMethod" class="form-select d-inline-block ms-2" style="width: auto;" disabled>
+                                <option value="amplitude">振幅编码</option>
+                                <option value="angle">角度编码</option>
+                            </select>
+                        </div>
+                        <div id="conversionResults" style="display: none;">
+                            <h5>转换结果</h5>
+                            <div id="conversionSummary"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">市场数据与分析</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <button id="analyzeMarket" class="btn btn-primary" disabled>分析市场数据</button>
+                            <button id="showStockData" class="btn btn-outline-primary ms-2" disabled>查看市场数据</button>
+                        </div>
+                        <div id="marketChartContainer">
+                            <div id="stockChart"></div>
+                        </div>
+                        <div id="marketAnalysisResults" style="display: none;" class="mt-4">
+                            <h5>市场分析结果</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>股票</th>
+                                            <th>综合评分</th>
+                                            <th>最新价格</th>
+                                            <th>趋势方向</th>
+                                            <th>趋势强度</th>
+                                            <th>波动性</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="analysisTable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 py-3 text-center bg-white">
+        <div class="container">
+            <p class="text-muted mb-0">量子核心系统可视化仪表盘 &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html> 

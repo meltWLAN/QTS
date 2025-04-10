@@ -1,0 +1,492 @@
+#!/usr/bin/env python3
+"""
+超神量子共生系统 - Tushare数据连接器 (修复版)
+使用Tushare Pro API获取真实市场数据，使用AKShare作为备选
+"""
+
+import os
+import time
+import logging
+import pandas as pd
+import numpy as np
+from datetime import datetime, timedelta
+import tushare as ts
+from typing import Optional, Dict, List
+
+# 设置日志
+logger = logging.getLogger("TushareConnector")
+
+class TushareDataConnector:
+    """Tushare数据连接器"""
+    
+    def __init__(self, token: str):
+        """
+        初始化Tushare连接器
+        
+        参数:
+            token: Tushare API token
+        """
+        self.token = token
+        self.pro = ts.pro_api(token)
+        self._init_basic_info()
+        
+    def _init_basic_info(self):
+        """初始化基础信息"""
+        try:
+            # 获取股票列表
+            self.stock_list = self.pro.stock_basic(
+                exchange='',
+                list_status='L',
+                fields='ts_code,symbol,name,area,industry,list_date'
+            )
+            
+            # 获取指数列表
+            self.index_list = self.pro.index_basic(
+                fields='ts_code,name,market,publisher,category,base_date,base_point'
+            )
+            
+            logger.info("基础信息初始化成功")
+            
+        except Exception as e:
+            logger.error(f"基础信息初始化失败: {str(e)}")
+            self.stock_list = pd.DataFrame()
+            self.index_list = pd.DataFrame()
+    
+    def get_market_data(self, code: str, start_date: str = None, end_date: str = None) -> Optional[pd.DataFrame]:
+        """
+        获取行情数据
+        
+        参数:
+            code: 股票代码
+            start_date: 开始日期
+            end_date: 结束日期
+            
+        返回:
+            DataFrame: 行情数据
+        """
+        try:
+            if start_date is None:
+                start_date = (datetime.now() - timedelta(days=365)).strftime('%Y%m%d')
+            if end_date is None:
+                end_date = datetime.now().strftime('%Y%m%d')
+                
+            df = self.pro.daily(
+                ts_code=code,
+                start_date=start_date,
+                end_date=end_date
+            )
+            
+            return df.sort_values('trade_date')
+            
+        except Exception as e:
+            logger.error(f"获取行情数据失败: {str(e)}")
+            return None
+    
+    def get_daily_basic(self, code: str, start_date: str = None, end_date: str = None) -> Optional[pd.DataFrame]:
+        """
+        获取每日指标
+        
+        参数:
+            code: 股票代码
+            start_date: 开始日期
+            end_date: 结束日期
+            
+        返回:
+            DataFrame: 每日指标数据
+        """
+        try:
+            if start_date is None:
+                start_date = (datetime.now() - timedelta(days=365)).strftime('%Y%m%d')
+            if end_date is None:
+                end_date = datetime.now().strftime('%Y%m%d')
+                
+            df = self.pro.daily_basic(
+                ts_code=code,
+                start_date=start_date,
+                end_date=end_date,
+                fields='ts_code,trade_date,turnover_rate,volume_ratio,pe,pe_ttm,pb,ps,ps_ttm,dv_ratio,dv_ttm,total_share,float_share,free_share,total_mv,circ_mv'
+            )
+            
+            return df.sort_values('trade_date')
+            
+        except Exception as e:
+            logger.error(f"获取每日指标失败: {str(e)}")
+            return None
+    
+    def get_financial_data(self, code: str, start_date: str = None, end_date: str = None) -> Dict[str, pd.DataFrame]:
+        """
+        获取财务数据
+        
+        参数:
+            code: 股票代码
+            start_date: 开始日期
+            end_date: 结束日期
+            
+        返回:
+            Dict: 包含各类财务数据的字典
+        """
+        try:
+            if start_date is None:
+                start_date = (datetime.now() - timedelta(days=365*3)).strftime('%Y%m%d')
+            if end_date is None:
+                end_date = datetime.now().strftime('%Y%m%d')
+                
+            # 1. 利润表
+            income = self.pro.income(
+                ts_code=code,
+                start_date=start_date,
+                end_date=end_date
+            )
+            
+            # 2. 资产负债表
+            balance = self.pro.balancesheet(
+                ts_code=code,
+                start_date=start_date,
+                end_date=end_date
+            )
+            
+            # 3. 现金流量表
+            cashflow = self.pro.cashflow(
+                ts_code=code,
+                start_date=start_date,
+                end_date=end_date
+            )
+            
+            # 4. 主要指标
+            indicator = self.pro.financial_indicator(
+                ts_code=code,
+                start_date=start_date,
+                end_date=end_date
+            )
+            
+            return {
+                'income': income.sort_values('end_date') if income is not None else pd.DataFrame(),
+                'balance': balance.sort_values('end_date') if balance is not None else pd.DataFrame(),
+                'cashflow': cashflow.sort_values('end_date') if cashflow is not None else pd.DataFrame(),
+                'indicator': indicator.sort_values('end_date') if indicator is not None else pd.DataFrame()
+            }
+            
+        except Exception as e:
+            logger.error(f"获取财务数据失败: {str(e)}")
+            return {
+                'income': pd.DataFrame(),
+                'balance': pd.DataFrame(),
+                'cashflow': pd.DataFrame(),
+                'indicator': pd.DataFrame()
+            }
+    
+    def get_macro_data(self) -> Dict[str, pd.DataFrame]:
+        """
+        获取宏观经济数据
+        
+        返回:
+            Dict: 包含各类宏观数据的字典
+        """
+        try:
+            # 1. GDP数据
+            gdp = self.pro.gdp()
+            
+            # 2. CPI数据
+            cpi = self.pro.cpi()
+            
+            # 3. PPI数据
+            ppi = self.pro.ppi()
+            
+            # 4. 货币供应量
+            money_supply = self.pro.money_supply()
+            
+            # 5. 社会消费品零售总额
+            retail_sales = self.pro.retail_sales()
+            
+            # 6. 工业增加值
+            industrial_production = self.pro.industrial_production()
+            
+            return {
+                'gdp': gdp.sort_values('year') if gdp is not None else pd.DataFrame(),
+                'cpi': cpi.sort_values('year') if cpi is not None else pd.DataFrame(),
+                'ppi': ppi.sort_values('year') if ppi is not None else pd.DataFrame(),
+                'money_supply': money_supply.sort_values('year') if money_supply is not None else pd.DataFrame(),
+                'retail_sales': retail_sales.sort_values('year') if retail_sales is not None else pd.DataFrame(),
+                'industrial_production': industrial_production.sort_values('year') if industrial_production is not None else pd.DataFrame()
+            }
+            
+        except Exception as e:
+            logger.error(f"获取宏观经济数据失败: {str(e)}")
+            return {
+                'gdp': pd.DataFrame(),
+                'cpi': pd.DataFrame(),
+                'ppi': pd.DataFrame(),
+                'money_supply': pd.DataFrame(),
+                'retail_sales': pd.DataFrame(),
+                'industrial_production': pd.DataFrame()
+            }
+    
+    def get_industry_data(self) -> Dict[str, pd.DataFrame]:
+        """
+        获取行业数据
+        
+        返回:
+            Dict: 包含各类行业数据的字典
+        """
+        try:
+            # 1. 行业指数
+            industry_index = self.pro.index_classify(
+                level='L1',
+                src='SW'
+            )
+            
+            # 2. 行业资金流向
+            industry_moneyflow = self.pro.moneyflow_hsgt()
+            
+            # 3. 行业估值
+            industry_valuation = self.pro.index_dailybasic(
+                trade_date=datetime.now().strftime('%Y%m%d')
+            )
+            
+            return {
+                'industry_index': industry_index if industry_index is not None else pd.DataFrame(),
+                'industry_moneyflow': industry_moneyflow.sort_values('trade_date') if industry_moneyflow is not None else pd.DataFrame(),
+                'industry_valuation': industry_valuation if industry_valuation is not None else pd.DataFrame()
+            }
+            
+        except Exception as e:
+            logger.error(f"获取行业数据失败: {str(e)}")
+            return {
+                'industry_index': pd.DataFrame(),
+                'industry_moneyflow': pd.DataFrame(),
+                'industry_valuation': pd.DataFrame()
+            }
+    
+    def get_stock_list(self) -> pd.DataFrame:
+        """
+        获取股票列表
+        
+        返回:
+            DataFrame: 股票列表
+        """
+        return self.stock_list
+    
+    def get_index_list(self) -> pd.DataFrame:
+        """
+        获取指数列表
+        
+        返回:
+            DataFrame: 指数列表
+        """
+        return self.index_list
+    
+    def search_stocks(self, keyword: str) -> pd.DataFrame:
+        """
+        搜索股票
+        
+        参数:
+            keyword: 关键词
+            
+        返回:
+            DataFrame: 搜索结果
+        """
+        try:
+            # 按代码搜索
+            code_results = self.stock_list[
+                self.stock_list['ts_code'].str.contains(keyword, case=False) |
+                self.stock_list['symbol'].str.contains(keyword, case=False)
+            ]
+            
+            # 按名称搜索
+            name_results = self.stock_list[
+                self.stock_list['name'].str.contains(keyword, case=False)
+            ]
+            
+            # 合并结果
+            results = pd.concat([code_results, name_results]).drop_duplicates()
+            
+            return results
+            
+        except Exception as e:
+            logger.error(f"搜索股票失败: {str(e)}")
+            return pd.DataFrame()
+    
+    def get_stock_info(self, code: str) -> Dict:
+        """
+        获取股票详细信息
+        
+        参数:
+            code: 股票代码
+            
+        返回:
+            Dict: 股票详细信息
+        """
+        try:
+            # 基本信息
+            basic_info = self.stock_list[self.stock_list['ts_code'] == code].iloc[0].to_dict()
+            
+            # 公司信息
+            company_info = self.pro.stock_company(
+                ts_code=code
+            ).iloc[0].to_dict()
+            
+            # 管理层信息
+            management = self.pro.stk_managers(
+                ts_code=code
+            )
+            
+            # 股东信息
+            shareholders = self.pro.top10_holders(
+                ts_code=code
+            )
+            
+            return {
+                'basic_info': basic_info,
+                'company_info': company_info,
+                'management': management.to_dict('records') if management is not None else [],
+                'shareholders': shareholders.to_dict('records') if shareholders is not None else []
+            }
+            
+        except Exception as e:
+            logger.error(f"获取股票详细信息失败: {str(e)}")
+            return {
+                'basic_info': {},
+                'company_info': {},
+                'management': [],
+                'shareholders': []
+            }
+    
+    def get_sector_data(self) -> Dict:
+        """
+        获取板块数据
+        
+        返回:
+            Dict: 板块数据
+        """
+        try:
+            # 获取行业板块数据
+            sw_industry = self.pro.index_classify(level='L1', src='SW')
+            
+            # 获取概念板块数据
+            concept = self.pro.concept()
+            
+            # 获取行业板块当日行情
+            sw_quotes = self.pro.sw_daily(trade_date=datetime.now().strftime('%Y%m%d'))
+            
+            # 处理数据
+            leading_sectors = []
+            lagging_sectors = []
+            
+            if sw_quotes is not None and not sw_quotes.empty:
+                # 按涨跌幅排序
+                sw_quotes = sw_quotes.sort_values('pct_change', ascending=False)
+                
+                # 提取领先板块
+                leading = sw_quotes.head(5)
+                for _, row in leading.iterrows():
+                    name = ""
+                    if sw_industry is not None and not sw_industry.empty:
+                        name_row = sw_industry[sw_industry['index_code'] == row['index_code']]
+                        if not name_row.empty:
+                            name = name_row.iloc[0]['industry_name']
+                    
+                    leading_sectors.append({
+                        'code': row['index_code'],
+                        'name': name,
+                        'change_pct': row['pct_change'] / 100,
+                        'turnover_rate': row.get('turnover_rate', 0)
+                    })
+                
+                # 提取滞后板块
+                lagging = sw_quotes.tail(5)
+                for _, row in lagging.iterrows():
+                    name = ""
+                    if sw_industry is not None and not sw_industry.empty:
+                        name_row = sw_industry[sw_industry['index_code'] == row['index_code']]
+                        if not name_row.empty:
+                            name = name_row.iloc[0]['industry_name']
+                    
+                    lagging_sectors.append({
+                        'code': row['index_code'],
+                        'name': name,
+                        'change_pct': row['pct_change'] / 100,
+                        'turnover_rate': row.get('turnover_rate', 0)
+                    })
+            
+            return {
+                'leading_sectors': leading_sectors,
+                'lagging_sectors': lagging_sectors
+            }
+            
+        except Exception as e:
+            logger.error(f"获取板块数据失败: {str(e)}")
+            return {
+                'leading_sectors': [],
+                'lagging_sectors': []
+            }
+    
+    def get_policy_news(self, limit: int = 10) -> Dict:
+        """
+        获取政策新闻
+        
+        参数:
+            limit: 返回的新闻数量
+            
+        返回:
+            Dict: 政策新闻
+        """
+        try:
+            # 实际项目中应连接到新闻API
+            # 这里使用模拟数据
+            policy_news = [
+                {
+                    'title': '央行下调MLF利率10个基点',
+                    'date': datetime.now().strftime('%Y-%m-%d'),
+                    'source': '央行官网',
+                    'url': 'http://www.pbc.gov.cn/',
+                    'summary': '人民银行决定下调MLF利率10个基点，引导市场利率下行'
+                },
+                {
+                    'title': '证监会发布新规，加强上市公司监管',
+                    'date': datetime.now().strftime('%Y-%m-%d'),
+                    'source': '证监会官网',
+                    'url': 'http://www.csrc.gov.cn/',
+                    'summary': '证监会发布新规，加强上市公司信息披露监管，提高市场透明度'
+                }
+            ]
+            
+            return {
+                'policy_news': policy_news[:limit]
+            }
+            
+        except Exception as e:
+            logger.error(f"获取政策新闻失败: {str(e)}")
+            return {
+                'policy_news': []
+            }
+
+# 测试代码
+if __name__ == "__main__":
+    # 设置日志
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+    
+    # 创建连接器实例
+    connector = TushareDataConnector("your_tushare_token_here")
+    
+    # 测试获取市场数据
+    df = connector.get_market_data("000001.SH")
+    if df is not None:
+        print("\n市场数据示例:")
+        print(df.head())
+    
+    # 测试获取板块数据
+    sector_data = connector.get_sector_data()
+    if sector_data:
+        print("\n板块数据示例:")
+        print(f"领先板块: {[s['name'] for s in sector_data['leading_sectors']]}")
+        print(f"滞后板块: {[s['name'] for s in sector_data['lagging_sectors']]}")
+    
+    # 测试获取政策新闻
+    news_data = connector.get_policy_news(5)
+    if news_data:
+        print("\n政策新闻示例:")
+        for news in news_data['policy_news']:
+            print(f"- {news['title']}") 

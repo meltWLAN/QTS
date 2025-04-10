@@ -1,0 +1,84 @@
+2025-04-10 20:52:55,116 - QuantumDesktop.ConfigManager - INFO - 配置加载成功
+2025-04-10 20:52:55,117 - QuantumDesktop.ConfigManager - INFO - 配置管理器初始化完成，配置路径: /Users/mac/.quantum_desktop/config.json
+2025-04-10 20:52:55,118 - QuantumDesktop.StyleManager - INFO - 样式管理器初始化完成
+2025-04-10 20:52:55,118 - QuantumDesktop.StyleManager - INFO - 应用主题: dark
+2025-04-10 20:52:57,570 - QuantumDesktop.SystemManager - INFO - 系统管理器初始化完成
+2025-04-10 20:52:57,781 - QuantumDesktop.ComponentStatusWidget - INFO - 组件状态小部件初始化完成
+2025-04-10 20:52:57,856 - QuantumDesktop.DashboardPanel - INFO - 仪表盘面板初始化完成
+2025-04-10 20:52:57,916 - QuantumDesktop.QuantumCircuitPanel - INFO - 量子电路面板初始化完成
+2025-04-10 20:52:58,033 - QuantumDesktop.MarketAnalysisPanel - INFO - 市场分析面板初始化完成
+2025-04-10 20:52:58,089 - QuantumDesktop.MainWindow - INFO - 主窗口创建完成
+2025-04-10 20:52:58,097 - QuantumDesktop - INFO - 应用程序初始化完成
+2025-04-10 20:53:00,951 - QuantumDesktop - INFO - 应用程序启动完成
+2025-04-10 20:53:05,182 - QuantumDesktop.MainWindow - INFO - 启动量子核心系统
+2025-04-10 20:53:05,183 - QuantumDesktop.SystemManager - INFO - 启动量子核心系统...
+2025-04-10 20:53:05,183 - quantum_core.quantum_backend - INFO - 初始化量子后端: quantum_simulator, 类型: simulator, 最大量子比特: 24
+2025-04-10 20:53:05,183 - quantum_core.quantum_backend - INFO - 正在启动量子后端...
+2025-04-10 20:53:05,684 - quantum_core.quantum_backend - INFO - 量子后端启动成功
+2025-04-10 20:53:05,684 - QuantumDesktop.SystemManager - INFO - 量子后端启动成功
+2025-04-10 20:53:05,685 - quantum_core.market_to_quantum - INFO - 注册编码方法: amplitude
+2025-04-10 20:53:05,685 - quantum_core.market_to_quantum - INFO - 注册编码方法: angle
+2025-04-10 20:53:05,685 - quantum_core.market_to_quantum - INFO - 注册编码方法: binary
+2025-04-10 20:53:05,685 - quantum_core.market_to_quantum - INFO - 注册了 3 个默认编码方法
+2025-04-10 20:53:05,685 - quantum_core.market_to_quantum - INFO - 市场到量子转换器初始化完成
+2025-04-10 20:53:05,685 - quantum_core.market_to_quantum - INFO - 启动市场到量子转换器...
+2025-04-10 20:53:05,685 - quantum_core.market_to_quantum - INFO - 市场到量子转换器启动完成
+2025-04-10 20:53:05,685 - QuantumDesktop.SystemManager - INFO - 市场到量子转换器启动成功
+2025-04-10 20:53:05,686 - quantum_core.quantum_interpreter - INFO - 注册解释方法: probability
+2025-04-10 20:53:05,686 - quantum_core.quantum_interpreter - INFO - 注册解释方法: threshold
+2025-04-10 20:53:05,686 - quantum_core.quantum_interpreter - INFO - 注册解释方法: relative
+2025-04-10 20:53:05,686 - quantum_core.quantum_interpreter - INFO - 注册了 3 个默认解释方法
+2025-04-10 20:53:05,686 - quantum_core.quantum_interpreter - INFO - 量子解释器初始化完成
+2025-04-10 20:53:05,686 - quantum_core.quantum_interpreter - INFO - 启动量子解释器...
+2025-04-10 20:53:05,686 - quantum_core.quantum_interpreter - INFO - 量子解释器启动完成
+2025-04-10 20:53:05,687 - QuantumDesktop.SystemManager - INFO - 量子解释器启动成功
+2025-04-10 20:53:05,687 - quantum_core.multidimensional_analysis - INFO - 多维分析器初始化完成
+2025-04-10 20:53:05,687 - quantum_core.multidimensional_analysis - INFO - 启动多维分析器...
+2025-04-10 20:53:05,687 - quantum_core.multidimensional_analysis - INFO - 多维分析器启动完成
+2025-04-10 20:53:05,687 - QuantumDesktop.SystemManager - INFO - 市场分析器启动成功
+2025-04-10 20:53:05,688 - QuantumDesktop.SystemManager - INFO - 开始系统监控
+2025-04-10 20:53:05,688 - QuantumDesktop.SystemManager - INFO - 量子核心系统启动完成
+2025-04-10 20:53:31,352 - QuantumDesktop.MainWindow - INFO - 停止量子核心系统
+2025-04-10 20:53:31,352 - QuantumDesktop.SystemManager - INFO - 停止量子核心系统...
+2025-04-10 20:53:32,382 - QuantumDesktop.SystemManager - INFO - 系统监控结束
+2025-04-10 20:53:32,382 - quantum_core.multidimensional_analysis - INFO - 停止多维分析器...
+2025-04-10 20:53:32,383 - quantum_core.multidimensional_analysis - INFO - 多维分析器已停止
+2025-04-10 20:53:32,383 - QuantumDesktop.SystemManager - INFO - analyzer 停止成功
+2025-04-10 20:53:32,383 - quantum_core.quantum_interpreter - INFO - 停止量子解释器...
+2025-04-10 20:53:32,383 - quantum_core.quantum_interpreter - INFO - 量子解释器已停止
+2025-04-10 20:53:32,383 - QuantumDesktop.SystemManager - INFO - interpreter 停止成功
+2025-04-10 20:53:32,383 - quantum_core.market_to_quantum - INFO - 停止市场到量子转换器...
+2025-04-10 20:53:32,384 - quantum_core.market_to_quantum - INFO - 市场到量子转换器已停止
+2025-04-10 20:53:32,384 - QuantumDesktop.SystemManager - INFO - converter 停止成功
+2025-04-10 20:53:32,384 - quantum_core.quantum_backend - INFO - 正在停止量子后端...
+2025-04-10 20:53:32,685 - quantum_core.quantum_backend - INFO - 量子后端已停止
+2025-04-10 20:53:32,685 - QuantumDesktop.SystemManager - INFO - backend 停止成功
+2025-04-10 20:53:32,685 - QuantumDesktop.SystemManager - INFO - 量子核心系统已停止
+2025-04-10 20:53:36,344 - QuantumDesktop.MainWindow - INFO - 启动量子核心系统
+2025-04-10 20:53:36,345 - QuantumDesktop.SystemManager - INFO - 启动量子核心系统...
+2025-04-10 20:53:36,345 - quantum_core.quantum_backend - INFO - 初始化量子后端: quantum_simulator, 类型: simulator, 最大量子比特: 24
+2025-04-10 20:53:36,345 - quantum_core.quantum_backend - INFO - 正在启动量子后端...
+2025-04-10 20:53:36,846 - quantum_core.quantum_backend - INFO - 量子后端启动成功
+2025-04-10 20:53:36,847 - QuantumDesktop.SystemManager - INFO - 量子后端启动成功
+2025-04-10 20:53:36,847 - quantum_core.market_to_quantum - INFO - 注册编码方法: amplitude
+2025-04-10 20:53:36,847 - quantum_core.market_to_quantum - INFO - 注册编码方法: angle
+2025-04-10 20:53:36,847 - quantum_core.market_to_quantum - INFO - 注册编码方法: binary
+2025-04-10 20:53:36,847 - quantum_core.market_to_quantum - INFO - 注册了 3 个默认编码方法
+2025-04-10 20:53:36,848 - quantum_core.market_to_quantum - INFO - 市场到量子转换器初始化完成
+2025-04-10 20:53:36,848 - quantum_core.market_to_quantum - INFO - 启动市场到量子转换器...
+2025-04-10 20:53:36,848 - quantum_core.market_to_quantum - INFO - 市场到量子转换器启动完成
+2025-04-10 20:53:36,848 - QuantumDesktop.SystemManager - INFO - 市场到量子转换器启动成功
+2025-04-10 20:53:36,848 - quantum_core.quantum_interpreter - INFO - 注册解释方法: probability
+2025-04-10 20:53:36,848 - quantum_core.quantum_interpreter - INFO - 注册解释方法: threshold
+2025-04-10 20:53:36,849 - quantum_core.quantum_interpreter - INFO - 注册解释方法: relative
+2025-04-10 20:53:36,849 - quantum_core.quantum_interpreter - INFO - 注册了 3 个默认解释方法
+2025-04-10 20:53:36,849 - quantum_core.quantum_interpreter - INFO - 量子解释器初始化完成
+2025-04-10 20:53:36,849 - quantum_core.quantum_interpreter - INFO - 启动量子解释器...
+2025-04-10 20:53:36,849 - quantum_core.quantum_interpreter - INFO - 量子解释器启动完成
+2025-04-10 20:53:36,850 - QuantumDesktop.SystemManager - INFO - 量子解释器启动成功
+2025-04-10 20:53:36,850 - quantum_core.multidimensional_analysis - INFO - 多维分析器初始化完成
+2025-04-10 20:53:36,850 - quantum_core.multidimensional_analysis - INFO - 启动多维分析器...
+2025-04-10 20:53:36,850 - quantum_core.multidimensional_analysis - INFO - 多维分析器启动完成
+2025-04-10 20:53:36,850 - QuantumDesktop.SystemManager - INFO - 市场分析器启动成功
+2025-04-10 20:53:36,851 - QuantumDesktop.SystemManager - INFO - 开始系统监控
+2025-04-10 20:53:36,851 - QuantumDesktop.SystemManager - INFO - 量子核心系统启动完成

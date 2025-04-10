@@ -1,0 +1,150 @@
+2025-04-10 12:54:57,331 [INFO] SupergodCockpitLauncher: ==================================================
+2025-04-10 12:54:57,340 [INFO] SupergodCockpitLauncher: 超神量子共生系统 - 驾驶舱启动器
+2025-04-10 12:54:57,342 [INFO] SupergodCockpitLauncher: ==================================================
+2025-04-10 12:54:57,343 [INFO] SupergodCockpitLauncher: 尝试导入驾驶舱模块...
+2025-04-10 12:54:57,344 [INFO] SupergodCockpitLauncher: 尝试从v1.2.0版本导入...
+2025-04-10 12:55:41,494 [INFO] SupergodCockpit: 成功加载超神分析引擎模块
+2025-04-10 12:55:41,496 [INFO] SupergodCockpitLauncher: 成功从v1.2.0版本导入驾驶舱
+2025-04-10 12:55:41,496 [INFO] SupergodCockpitLauncher: 成功导入PyQt5
+2025-04-10 12:55:41,497 [INFO] SupergodCockpitLauncher: 正在启动驾驶舱...
+2025-04-10 12:55:42,309 [INFO] ChinaMarketCore: 初始化中国市场分析核心...
+2025-04-10 12:55:42,310 [INFO] ChinaMarketCore: 使用默认配置
+2025-04-10 12:55:42,311 [INFO] ChinaMarketCore: 异常检测模型初始化完成
+2025-04-10 12:55:42,311 [INFO] ChinaMarketCore: 中国市场分析核心初始化完成
+2025-04-10 12:55:42,311 [INFO] SupergodCockpit: 已加载市场分析核心
+2025-04-10 12:55:42,316 [INFO] PolicyAnalyzer: 初始化政策分析器...
+2025-04-10 12:55:42,317 [DEBUG] jieba: Building prefix dict from the default dictionary ...
+2025-04-10 12:55:47,854 [DEBUG] jieba: Dumping model to file cache /var/folders/db/5rkvxls54wd1m3jhkypp5rf00000gn/T/jieba.cache
+2025-04-10 12:55:48,315 [DEBUG] jieba: Loading model cost 5.998 seconds.
+2025-04-10 12:55:48,328 [DEBUG] jieba: Prefix dict has been built successfully.
+2025-04-10 12:55:48,344 [INFO] PolicyAnalyzer: 分词器初始化完成
+2025-04-10 12:55:48,349 [INFO] PolicyAnalyzer: 政策分析器初始化完成
+2025-04-10 12:55:48,350 [INFO] SupergodCockpit: 已加载政策分析器
+2025-04-10 12:55:48,351 [INFO] SectorRotationTracker: 初始化板块轮动跟踪器...
+2025-04-10 12:55:48,353 [INFO] SectorRotationTracker: 板块轮动跟踪器初始化完成
+2025-04-10 12:55:48,354 [INFO] SupergodCockpit: 已加载板块轮动追踪器
+2025-04-10 12:55:48,360 [INFO] ChaosTheory: 混沌理论分析器初始化完成
+2025-04-10 12:55:48,360 [INFO] SupergodCockpit: 已加载混沌理论分析器
+2025-04-10 12:55:48,361 [INFO] QuantumDimension: 初始化量子维度增强器...
+2025-04-10 12:55:48,366 [INFO] QuantumDimension: 量子维度扩展器初始化完成，从11维扩展到21维
+2025-04-10 12:55:48,369 [INFO] SupergodCockpit: 已加载量子维度增强器
+2025-04-10 12:55:51,696 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:55:51,696 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:55:51,950 [INFO] SupergodCockpit: 已加载演示数据: 100 行
+2025-04-10 12:55:53,591 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:55:54,413 [INFO] SupergodCockpitLauncher: 驾驶舱启动成功
+2025-04-10 12:55:56,718 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:55:56,718 [INFO] SupergodDataLoader: 初始化Tushare数据连接器成功
+2025-04-10 12:55:56,719 [INFO] SupergodDataLoader: 加载政策数据...
+2025-04-10 12:55:56,719 [INFO] SupergodDataLoader: 正在从Tushare获取真实政策数据
+2025-04-10 12:55:56,720 [INFO] TushareConnector: 尝试获取政策新闻，数量: 10
+2025-04-10 12:55:58,026 [INFO] TushareConnector: 成功获取CCTV新闻: 100条
+2025-04-10 12:55:58,037 [INFO] TushareConnector: 成功从CCTV获取政策新闻，共 10 条
+2025-04-10 12:55:58,042 [INFO] SupergodDataLoader: 成功从Tushare获取 10 条政策新闻
+2025-04-10 12:55:58,044 [INFO] SupergodDataLoader: 加载板块数据...
+2025-04-10 12:55:58,044 [INFO] SupergodDataLoader: 正在从Tushare获取真实板块数据
+2025-04-10 12:55:58,045 [INFO] TushareConnector: 尝试获取行业资金流向数据: 20250410
+2025-04-10 12:55:59,259 [INFO] TushareConnector: 获取到概念板块列表: 879个
+2025-04-10 12:56:14,212 [INFO] TushareConnector: 成功生成概念板块数据: 10条
+2025-04-10 12:56:14,217 [INFO] TushareConnector: 成功处理板块数据，领先板块: 5，滞后板块: 5
+2025-04-10 12:56:14,232 [INFO] SupergodDataLoader: 成功从Tushare获取 10 个板块数据
+2025-04-10 12:56:14,233 [INFO] SupergodCockpit: 已加载政策和板块数据
+2025-04-10 12:56:14,235 [INFO] ChinaMarketCore: 开始中国市场分析...
+2025-04-10 12:56:19,144 [INFO] ChinaMarketCore: 市场分析完成，当前周期: GROWTH_LEADING，置信度: 0.60
+2025-04-10 12:56:19,144 [INFO] PolicyAnalyzer: 开始全面分析政策环境...
+2025-04-10 12:56:19,145 [INFO] PolicyAnalyzer: 开始分析政策环境...
+2025-04-10 12:56:19,198 [INFO] PolicyAnalyzer: 处理了 10 条政策新闻，记忆库现有 10 条
+2025-04-10 12:56:19,198 [INFO] PolicyAnalyzer: 政策分析完成，当前政策方向: 0.00
+2025-04-10 12:56:19,199 [INFO] PolicyAnalyzer: 政策环境全面分析完成，周期阶段: POLICY_NEUTRAL
+2025-04-10 12:56:19,199 [INFO] SectorRotationTracker: 成功更新板块数据，包含 5 个领先板块和 5 个滞后板块
+2025-04-10 12:56:19,200 [INFO] SectorRotationTracker: 开始分析板块轮动...
+2025-04-10 12:56:19,200 [WARNING] SectorRotationTracker: 缺少足够的板块数据进行分析
+2025-04-10 12:56:19,200 [INFO] SupergodCockpit: 板块轮动分析完成，强度: 0.00
+2025-04-10 12:56:19,201 [INFO] ChaosTheory: 开始混沌理论全面分析...
+2025-04-10 12:56:19,303 [INFO] ChaosTheory: 混沌理论分析完成
+2025-04-10 12:56:19,303 [INFO] QuantumDimension: 开始量子维度扩展...
+2025-04-10 12:56:19,347 [INFO] QuantumDimension: 量子维度扩展完成
+2025-04-10 12:56:19,467 [INFO] SupergodCockpit: 分析完成，更新UI
+2025-04-10 12:56:35,437 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:35,678 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:35,679 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:35,931 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:37,530 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:37,757 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:37,774 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:37,774 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:37,924 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:37,925 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:37,953 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:37,974 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:38,123 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:38,183 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:38,186 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:38,187 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:38,299 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:38,378 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:38,408 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:38,410 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:38,479 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:38,559 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:38,559 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:38,642 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:38,713 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:38,763 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:38,769 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:38,769 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:38,795 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:38,859 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:38,859 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:38,964 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:38,987 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:38,990 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:38,991 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:39,070 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:39,116 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:39,209 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:39,210 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:39,308 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:39,309 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:39,314 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:39,414 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:39,520 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:39,521 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:39,538 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:39,564 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:39,593 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:39,680 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:39,764 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:39,774 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:39,774 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:39,907 [INFO] TushareConnector: Tushare Pro API初始化成功
+2025-04-10 12:56:39,911 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:39,911 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:40,031 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:40,273 [INFO] TushareConnector: Tushare API连接测试成功
+2025-04-10 12:56:40,275 [INFO] TushareConnector: 获取指数000300.SH行情，从20250311到20250410
+2025-04-10 12:56:40,283 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:40,573 [INFO] TushareConnector: 成功获取指数000300.SH行情，共21条记录
+2025-04-10 12:56:44,742 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:44,742 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:56:45,295 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:45,296 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:56:45,490 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:45,491 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:56:45,662 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:45,663 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:56:45,865 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:45,865 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:56:46,068 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:46,068 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:56:46,240 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:46,240 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:56:46,421 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:46,421 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:56:46,615 [WARNING] RecommendedStocksPanel: 无法获取真实数据，使用模拟推荐数据
+2025-04-10 12:56:46,615 [INFO] RecommendedStocksPanel: 生成模拟推荐股票...
+2025-04-10 12:57:16,276 [INFO] SupergodCockpit: 尝试同步市场数据
+2025-04-10 12:57:21,613 [INFO] SupergodCockpit: 已完成模型校准
+2025-04-10 13:07:10,762 [INFO] SupergodCockpit: 驾驶舱正在关闭...
+2025-04-10 13:07:10,762 [INFO] SupergodCockpit: 安全停止驾驶舱...
+2025-04-10 13:07:10,763 [INFO] SupergodCockpit: 驾驶舱已安全停止

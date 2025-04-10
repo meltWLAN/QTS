@@ -1,0 +1,246 @@
+#!/usr/bin/env python3
+"""
+超神量子共生网络交易系统 - 桌面应用入口
+集成了高级启动画面和全部功能
+"""
+
+import sys
+import os
+import logging
+import traceback
+from PyQt5.QtWidgets import QApplication, QMessageBox
+from PyQt5.QtCore import Qt, QTimer
+
+# 配置日志
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger("SuperQuantumSystem")
+
+
+def import_or_install(package_name, import_name=None):
+    """尝试导入模块，如果不存在则提示安装"""
+    if import_name is None:
+        import_name = package_name
+    
+    try:
+        return __import__(import_name)
+    except ImportError:
+        print(f"缺少{package_name}模块，请安装后重试")
+        print(f"可使用命令: pip install {package_name}")
+        return None
+
+
+def load_controllers():
+    """加载控制器"""
+    try:
+        # 导入控制器
+        from simple_gui_app import DataController, TradingController
+        
+        # 创建控制器实例
+        data_controller = DataController()
+        trading_controller = TradingController()
+        
+        return data_controller, trading_controller
+    except Exception as e:
+        logger.error(f"加载控制器失败: {str(e)}")
+        logger.error(traceback.format_exc())
+        raise
+
+
+def try_load_advanced_splash():
+    """尝试加载高级启动画面"""
+    try:
+        from advanced_splash import SuperGodSplashScreen
+        return SuperGodSplashScreen
+    except ImportError:
+        # 如果高级启动画面不可用，使用简单版本
+        from simple_gui_app import SimpleSplashScreen
+        return SimpleSplashScreen
+
+
+def try_load_advanced_window():
+    """尝试加载高级主窗口"""
+    try:
+        # 尝试导入高级UI依赖
+        pyqtgraph = import_or_install('pyqtgraph')
+        qdarkstyle = import_or_install('qdarkstyle')
+        qt_material = import_or_install('qt-material', 'qt_material')
+        qtawesome = import_or_install('qtawesome')
+        
+        if all([pyqtgraph, qdarkstyle, qt_material, qtawesome]):
+            # 所有依赖都已安装，使用完整版
+            try:
+                from gui.views.main_window import SuperTradingMainWindow
+                logger.info("加载完整版主窗口成功")
+                return SuperTradingMainWindow
+            except Exception as e:
+                logger.error(f"加载完整版主窗口失败: {str(e)}")
+                logger.error(traceback.format_exc())
+                # 回退到简单版本
+    
+    except Exception as e:
+        logger.error(f"检查高级UI依赖时出错: {str(e)}")
+    
+    # 回退到简单版本
+    try:
+        from simple_gui_app import SimpleMainWindow
+        logger.info("加载简化版主窗口")
+        return SimpleMainWindow
+    except Exception as e:
+        logger.error(f"加载简化版主窗口失败: {str(e)}")
+        logger.error(traceback.format_exc())
+        raise
+
+
+def load_stylesheet():
+    """加载应用样式表"""
+    try:
+        # 尝试使用qt-material样式
+        try:
+            import qt_material
+            return None  # 返回None表示将使用apply_stylesheet而不是setStyleSheet
+        except ImportError:
+            pass
+        
+        # 尝试使用qdarkstyle
+        try:
+            import qdarkstyle
+            return qdarkstyle.load_stylesheet_pyqt5()
+        except ImportError:
+            pass
+        
+        # 回退到简单样式表
+        from simple_gui_app import load_stylesheet
+        return load_stylesheet()
+    
+    except Exception as e:
+        logger.error(f"加载样式表失败: {str(e)}")
+        # 提供一个最基本的样式
+        return """
+        QMainWindow, QWidget {
+            background-color: #2D2D30;
+            color: #E1E1E1;
+        }
+        """
+
+
+def main():
+    """主函数"""
+    # 记录启动信息
+    logger.info("超神量子共生网络交易系统 v0.2.0 启动中")
+    
+    # 确保当前目录是脚本所在目录
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    
+    try:
+        # 创建应用
+        app = QApplication(sys.argv)
+        app.setApplicationName("超神量子共生网络交易系统")
+        app.setApplicationVersion("0.2.0")
+        app.setAttribute(Qt.AA_UseHighDpiPixmaps)
+        
+        # 使用Fusion风格，与暗色主题更匹配
+        app.setStyle('Fusion')  
+        
+        # 加载启动画面类
+        SplashScreen = try_load_advanced_splash()
+        splash = SplashScreen()
+        splash.show()
+        app.processEvents()
+        
+        # 加载控制器
+        data_controller, trading_controller = load_controllers()
+        
+        # 加载主窗口类
+        MainWindow = try_load_advanced_window()
+        
+        # 创建主窗口
+        main_window = MainWindow(data_controller, trading_controller)
+        
+        # 应用样式表
+        stylesheet = load_stylesheet()
+        if stylesheet:
+            app.setStyleSheet(stylesheet)
+        else:
+            # 使用qt-material样式
+            try:
+                from qt_material import apply_stylesheet
+                apply_stylesheet(app, theme='dark_teal')
+            except Exception as e:
+                logger.warning(f"应用qt-material样式失败: {str(e)}")
+        
+        # 定义完成动作
+        def on_splash_finished():
+            # 初始化主窗口数据
+            if hasattr(main_window, 'initialize_with_data'):
+                # 检查是否需要参数
+                import inspect
+                sig = inspect.signature(main_window.initialize_with_data)
+                if len(sig.parameters) > 0:
+                    # 需要数据参数
+                    dummy_data = {
+                        "market_data": data_controller.get_market_data(),
+                        "account_data": trading_controller.get_account_info(),
+                        "positions": trading_controller.get_positions(),
+                        "network_status": {
+                            "segments": 5,
+                            "agents": 25,
+                            "learning": True,
+                            "evolution": 3,
+                            "performance": 85.2
+                        }
+                    }
+                    main_window.initialize_with_data(dummy_data)
+                else:
+                    # 简化版不需要参数
+                    main_window.initialize_with_data()
+            
+            # 显示主窗口
+            main_window.show()
+        
+        # 模拟加载过程
+        def update_progress():
+            stages = [
+                (20, "正在初始化量子网络..."),
+                (40, "加载市场数据..."),
+                (60, "校准量子共振频率..."),
+                (80, "同步交易引擎..."),
+                (100, "激活AI预测模块...")
+            ]
+            
+            for i, (progress, message) in enumerate(stages):
+                # 发送进度信号
+                QTimer.singleShot(i * 500, lambda p=progress, m=message: 
+                                 splash.progressChanged.emit(p, m))
+            
+            # 所有阶段完成后，发送完成信号
+            QTimer.singleShot(len(stages) * 500 + 300, lambda: 
+                             splash.finished.emit())
+        
+        # 连接信号
+        splash.finished.connect(on_splash_finished)
+        
+        # 启动加载进程
+        QTimer.singleShot(100, update_progress)
+        
+        return app.exec_()
+        
+    except Exception as e:
+        error_msg = f"启动失败: {str(e)}"
+        logger.error(error_msg)
+        logger.error(traceback.format_exc())
+        
+        try:
+            QMessageBox.critical(None, "启动失败", 
+                                f"错误: {str(e)}\n\n请查看日志获取详情。")
+        except:
+            print(f"严重错误: {str(e)}")
+            print(traceback.format_exc())
+        
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main()) 

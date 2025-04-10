@@ -1,0 +1,26 @@
+================================================================================
+                              超神量子共生系统 - 增强版验证测试报告                              
+================================================================================
+
+验证时间: 2025-04-08 09:49:56
+验证结果: 失败
+
+测试结果摘要:
+--------------------------------------------------------------------------------
+测试项目                                    结果                                      
+--------------------------------------------------------------------------------
+operating_system                        Darwin                                  
+os_compatibility                        兼容                                      
+python_version                          3.10.12                                 
+python_compatibility                    兼容                                      
+qt_version                              5.15.14                                 
+qt_compatibility                        兼容                                      
+network_connectivity                    正常                                      
+quantum_dimension_consistency           通过，偏差: 0.0508                           
+data_connector_consistency              错误: TushareDataConnector.get_index_data() got an unexpected keyword argument 'limit'
+data_connector_integration              正常                                      
+connector_function                      正常                                      
+cockpit_enhancement_integration         支持                                      
+cockpit_connector_integration           支持                                      
+
+================================================================================

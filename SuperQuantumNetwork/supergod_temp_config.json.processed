@@ -1,0 +1,6 @@
+{
+  "mode": "supergod",
+  "insights_file": "results/supergod_insights_20250405_225800.json",
+  "predictions_file": "results/supergod_predictions_20250405_225800.json",
+  "load_results": true
+}

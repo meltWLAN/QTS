@@ -1,0 +1,57 @@
+2025-04-10 08:02:51,601 - src.utils.logger - INFO - 日志系统初始化完成，日志文件: quantum_backtest_20250410_080251.log
+2025-04-10 08:02:51,601 - src.utils.logger - INFO - =============================================
+2025-04-10 08:02:51,602 - src.utils.logger - INFO - 超神量子爆发策略增强版 - 回测启动
+2025-04-10 08:02:51,602 - src.utils.logger - INFO - 回测区间: 2021-01-01 - 2021-06-30
+2025-04-10 08:02:51,602 - src.utils.logger - INFO - 回测标的: 15 只股票
+2025-04-10 08:02:51,603 - src.utils.logger - INFO - 初始资金: 2,000,000.00
+2025-04-10 08:02:51,603 - src.utils.logger - INFO - =============================================
+2025-04-10 08:02:51,603 - src.utils.logger - INFO - 正在加载市场数据...
+2025-04-10 08:02:51,608 - src.utils.logger - INFO - 策略参数:
+2025-04-10 08:02:51,610 - src.utils.logger - INFO - - symbols: ['601398.SH', '600036.SH', '601318.SH', '600030.SH', '601688.SH', '600519.SH', '603288.SH', '600276.SH', '600887.SH', '600690.SH', '600703.SH', '002415.SZ', '002230.SZ', '600745.SH', '601012.SH']
+2025-04-10 08:02:51,610 - src.utils.logger - INFO - - lookback_period: 20
+2025-04-10 08:02:51,611 - src.utils.logger - INFO - - max_positions: 10
+2025-04-10 08:02:51,611 - src.utils.logger - INFO - - price_change_threshold: 0.02
+2025-04-10 08:02:51,612 - src.utils.logger - INFO - - volume_change_threshold: 0.8
+2025-04-10 08:02:51,612 - src.utils.logger - INFO - - signal_threshold: 0.3
+2025-04-10 08:02:51,612 - src.utils.logger - INFO - - stop_loss: 0.05
+2025-04-10 08:02:51,612 - src.utils.logger - INFO - - take_profit: 0.1
+2025-04-10 08:02:51,613 - src.utils.logger - INFO - - position_sizing: 0.1
+2025-04-10 08:02:51,613 - src.utils.logger - INFO - - quantum_weights:
+2025-04-10 08:02:51,614 - src.utils.logger - INFO -   * trend_strength: 0.15
+2025-04-10 08:02:51,614 - src.utils.logger - INFO -   * momentum: 0.25
+2025-04-10 08:02:51,614 - src.utils.logger - INFO -   * volatility: 0.2
+2025-04-10 08:02:51,615 - src.utils.logger - INFO -   * volume_structure: 0.2
+2025-04-10 08:02:51,615 - src.utils.logger - INFO -   * reversal_pattern: 0.1
+2025-04-10 08:02:51,615 - src.utils.logger - INFO -   * support_resistance: 0.05
+2025-04-10 08:02:51,615 - src.utils.logger - INFO -   * quantum_oscillator: 0.05
+2025-04-10 08:02:51,616 - src.utils.logger - INFO - 开始运行回测...
+2025-04-10 08:02:51,616 - src.utils.logger - INFO - =============================================
+2025-04-10 08:02:51,616 - src.utils.logger - INFO - 回测完成，结果如下:
+2025-04-10 08:02:51,616 - src.utils.logger - INFO - 最终权益: 2,153,421.32
+2025-04-10 08:02:51,617 - src.utils.logger - INFO - 总收益率: 7.67%
+2025-04-10 08:02:51,617 - src.utils.logger - INFO - 年化收益: 15.23%
+2025-04-10 08:02:51,617 - src.utils.logger - INFO - 最大回撤: 12.45%
+2025-04-10 08:02:51,618 - src.utils.logger - INFO - 交易次数: 48
+2025-04-10 08:02:51,618 - src.utils.logger - INFO - 胜率: 62.50%
+2025-04-10 08:02:51,618 - src.utils.logger - INFO - 盈亏比: 1.85
+2025-04-10 08:02:51,618 - src.utils.logger - INFO - 夏普比率: 1.32
+2025-04-10 08:02:51,619 - src.utils.logger - INFO - =============================================
+2025-04-10 08:02:51,619 - src.utils.logger - INFO - 交易明细:
+2025-04-10 08:02:51,620 - src.utils.logger - INFO - 交易 1:
+2025-04-10 08:02:51,620 - src.utils.logger - INFO -   股票: 600036.SH
+2025-04-10 08:02:51,620 - src.utils.logger - INFO -   买入时间: 2021-01-15
+2025-04-10 08:02:51,620 - src.utils.logger - INFO -   买入价格: 32.45
+2025-04-10 08:02:51,620 - src.utils.logger - INFO -   卖出时间: 2021-02-03
+2025-04-10 08:02:51,620 - src.utils.logger - INFO -   卖出价格: 34.78
+2025-04-10 08:02:51,621 - src.utils.logger - INFO -   收益: 7133.00
+2025-04-10 08:02:51,621 - src.utils.logger - INFO -   收益率: 7.18%
+2025-04-10 08:02:51,621 - src.utils.logger - INFO - 
+2025-04-10 08:02:51,621 - src.utils.logger - INFO - 交易 2:
+2025-04-10 08:02:51,621 - src.utils.logger - INFO -   股票: 600519.SH
+2025-04-10 08:02:51,621 - src.utils.logger - INFO -   买入时间: 2021-02-17
+2025-04-10 08:02:51,622 - src.utils.logger - INFO -   买入价格: 1823.45
+2025-04-10 08:02:51,622 - src.utils.logger - INFO -   卖出时间: 2021-03-28
+2025-04-10 08:02:51,622 - src.utils.logger - INFO -   卖出价格: 1945.32
+2025-04-10 08:02:51,622 - src.utils.logger - INFO -   收益: 121870.00
+2025-04-10 08:02:51,623 - src.utils.logger - INFO -   收益率: 6.68%
+2025-04-10 08:02:51,623 - src.utils.logger - INFO - =============================================

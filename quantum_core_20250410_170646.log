@@ -1,0 +1,15 @@
+2025-04-10 17:06:46,476 - QuantumCoreLauncher - INFO - 正在启动超神量子核心...
+2025-04-10 17:06:46,486 - quantum_core.event_driven_coordinator - INFO - 运行时环境初始化完成
+2025-04-10 17:06:46,486 - QuantumCoreLauncher - INFO - 注册核心组件...
+2025-04-10 17:06:46,560 - quantum_core.event_system - INFO - 量子事件系统初始化完成
+2025-04-10 17:06:46,560 - quantum_core.event_driven_coordinator - INFO - 组件'event_system'已注册
+2025-04-10 17:06:47,887 - DataPipeline.MarketData - INFO - 数据流水线[MarketData]初始化完成
+2025-04-10 17:06:47,887 - MarketDataPipeline - INFO - 市场数据流水线初始化完成
+2025-04-10 17:06:47,888 - quantum_core.event_driven_coordinator - INFO - 组件'data_pipeline'已注册
+2025-04-10 17:06:47,890 - quantum_core.quantum_backend - INFO - 量子后端初始化，类型：simulator
+2025-04-10 17:06:47,890 - quantum_core.event_driven_coordinator - INFO - 组件'quantum_backend'已注册
+2025-04-10 17:06:47,891 - QuantumCoreLauncher - ERROR - 启动失败: cannot import name 'MultidimensionalAnalyzer' from 'quantum_core.multidimensional_analysis' (/Users/mac/Desktop/QTS/quantum_core/multidimensional_analysis.py)
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/QTS/launch_quantum_core.py", line 68, in main
+    from quantum_core.multidimensional_analysis import MultidimensionalAnalyzer
+ImportError: cannot import name 'MultidimensionalAnalyzer' from 'quantum_core.multidimensional_analysis' (/Users/mac/Desktop/QTS/quantum_core/multidimensional_analysis.py)

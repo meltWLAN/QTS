@@ -1,0 +1,527 @@
+{
+  "timestamp": "2025-04-07 00:08:28",
+  "market_analysis": {
+    "timestamp": "2025-04-07 00:08:28",
+    "indices": {
+      "SSE": 3170.320692632009,
+      "SZSE": 11515.706455482677,
+      "CSI300": 4382.925030500256
+    },
+    "market_status": "\u725b\u5e02",
+    "analyzed_stocks_count": 10,
+    "up_ratio": 0.6219147344801795,
+    "market_indicators": {
+      "temperature": 0.5750555008307067,
+      "volatility": 0.635854303259493,
+      "trend_strength": 0.7413865158880418,
+      "sentiment": 0.890592871065856,
+      "liquidity": 0.9242954280744301,
+      "anomaly_index": 0.0
+    },
+    "market_phase": "\u9707\u8361",
+    "quantum_influence": 0.37882778981736714,
+    "prediction": "\u5e02\u573a\u9707\u8361\u52a0\u5267\uff0c\u65b9\u5411\u4e0d\u660e\u786e\uff0c\u5efa\u8bae\u63a7\u5236\u4ed3\u4f4d\uff0c\u89c2\u671b\u4e3a\u4e3b\u3002\u5e02\u573a\u60c5\u7eea\u4e50\u89c2\uff0c\u9700\u8b66\u60d5\u8fc7\u5ea6\u4e50\u89c2\u5e26\u6765\u7684\u98ce\u9669"
+  },
+  "stock_analyses": {
+    "000001": {
+      "code": "000001",
+      "name": "\u80a1\u7968000001",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 23.940302052856516,
+      "technical_indicators": {
+        "ma5": 24.788314176856744,
+        "ma10": 24.621311611164934,
+        "ma20": 25.710930534871686,
+        "ma60": null,
+        "rsi": 36.87774591812763,
+        "macd": -1.913251732545998,
+        "bollinger_bands": {
+          "upper": 29.304381527606587,
+          "middle": 25.710930534871686,
+          "lower": 22.117479542136785,
+          "bandwidth": 0.2795271052411822
+        },
+        "volume": {
+          "average": 5918175.266666667,
+          "increase_ratio": 1.113065548616342
+        },
+        "volatility": 0.07905787752985419,
+        "momentum": -0.06238951571833773
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0b\u8dcc\u5e76\u8dcc\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0b\u8dcc"
+        ],
+        "strength_score": -0.17733483568091662,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          22.23,
+          22.68
+        ],
+        "resistance_levels": [
+          29.71,
+          30.31,
+          25.71
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "000333": {
+      "code": "000333",
+      "name": "\u80a1\u7968000333",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 99.21608791711985,
+      "technical_indicators": {
+        "ma5": 99.22255121288798,
+        "ma10": 101.0497752927607,
+        "ma20": 98.95094994917424,
+        "ma60": null,
+        "rsi": 55.65237682439213,
+        "macd": 4.464305198831411,
+        "bollinger_bands": {
+          "upper": 107.10347427750523,
+          "middle": 98.95094994917424,
+          "lower": 90.79842562084326,
+          "bandwidth": 0.16477910181799152
+        },
+        "volume": {
+          "average": 5393047.933333334,
+          "increase_ratio": 1.6717477966911944
+        },
+        "volatility": 0.05304874838032456,
+        "momentum": -0.023648456073161017
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "MACD\u4e3a\u6b63\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": 0.1251911453831009,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          88.96,
+          90.76,
+          98.95
+        ],
+        "resistance_levels": [
+          105.95,
+          108.09
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "000651": {
+      "code": "000651",
+      "name": "\u80a1\u7968000651",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 42.27808017218004,
+      "technical_indicators": {
+        "ma5": 44.03980523023524,
+        "ma10": 47.11024415951359,
+        "ma20": 50.75623829353365,
+        "ma60": null,
+        "rsi": 14.025820083521793,
+        "macd": -4.345256561312624,
+        "bollinger_bands": {
+          "upper": 60.29251711267403,
+          "middle": 50.75623829353365,
+          "lower": 41.21995947439327,
+          "bandwidth": 0.3757677534725934
+        },
+        "volume": {
+          "average": 5409260.233333333,
+          "increase_ratio": 0.9499842452270754
+        },
+        "volatility": 0.09997799514082041,
+        "momentum": -0.10493655451322348
+      },
+      "trend_analysis": {
+        "overall_trend": "\u4e0b\u964d",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "RSI\u5c0f\u4e8e30\uff0c\u663e\u793a\u5f31\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": -0.61696533395543,
+        "strength_status": "\u5f31\u52bf"
+      },
+      "support_resistance": {
+        "support_levels": [
+          40.79,
+          41.61
+        ],
+        "resistance_levels": [
+          58.49,
+          59.68,
+          50.76
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "000858": {
+      "code": "000858",
+      "name": "\u80a1\u7968000858",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 85.3072453348689,
+      "technical_indicators": {
+        "ma5": 88.7560225831352,
+        "ma10": 86.48302205083762,
+        "ma20": 88.48942059329327,
+        "ma60": null,
+        "rsi": 46.93636433297028,
+        "macd": -2.8154188111239193,
+        "bollinger_bands": {
+          "upper": 95.92704658609811,
+          "middle": 88.48942059329327,
+          "lower": 81.05179460048844,
+          "bandwidth": 0.16810203847958174
+        },
+        "volume": {
+          "average": 5063201.433333334,
+          "increase_ratio": 0.29900825000424797
+        },
+        "volatility": 0.04260083558792368,
+        "momentum": -0.04898415241013543
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": -0.12084589880529906,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          79.17,
+          80.77
+        ],
+        "resistance_levels": [
+          96.1,
+          98.04,
+          88.49
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "002594": {
+      "code": "002594",
+      "name": "\u80a1\u7968002594",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 32.72456729544824,
+      "technical_indicators": {
+        "ma5": 33.49592335825345,
+        "ma10": 34.46702349825766,
+        "ma20": 34.49700260061102,
+        "ma60": null,
+        "rsi": 42.27481675010557,
+        "macd": -0.4031803212520657,
+        "bollinger_bands": {
+          "upper": 36.49207534058586,
+          "middle": 34.49700260061102,
+          "lower": 32.501929860636174,
+          "bandwidth": 0.11566643995554021
+        },
+        "volume": {
+          "average": 5738750.533333333,
+          "increase_ratio": 0.9226130268681715
+        },
+        "volatility": 0.04022458576995093,
+        "momentum": -0.05295978770577836
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": -0.4169017096106985,
+        "strength_status": "\u504f\u5f31"
+      },
+      "support_resistance": {
+        "support_levels": [
+          31.87,
+          32.52
+        ],
+        "resistance_levels": [
+          37.11,
+          37.86,
+          34.5
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "600000": {
+      "code": "600000",
+      "name": "\u80a1\u7968600000",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 63.505905605573815,
+      "technical_indicators": {
+        "ma5": 62.82240747221376,
+        "ma10": 66.2802970342988,
+        "ma20": 71.78477495223231,
+        "ma60": null,
+        "rsi": 19.096210073989866,
+        "macd": -4.318561182628713,
+        "bollinger_bands": {
+          "upper": 84.08828370230876,
+          "middle": 71.78477495223231,
+          "lower": 59.481266202155865,
+          "bandwidth": 0.34278880885991664
+        },
+        "volume": {
+          "average": 5688756.666666667,
+          "increase_ratio": 0.39227587516194223
+        },
+        "volatility": 0.08002828103081298,
+        "momentum": -0.00915066512833651
+      },
+      "trend_analysis": {
+        "overall_trend": "\u4e0b\u964d",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "RSI\u5c0f\u4e8e30\uff0c\u663e\u793a\u5f31\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0a\u6da8\u5e76\u7a81\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0a\u6da8"
+        ],
+        "strength_score": -0.7453497597078134,
+        "strength_status": "\u5f31\u52bf"
+      },
+      "support_resistance": {
+        "support_levels": [
+          59.96,
+          61.18
+        ],
+        "resistance_levels": [
+          78.91,
+          80.5,
+          71.78
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "600036": {
+      "code": "600036",
+      "name": "\u80a1\u7968600036",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 54.25478999905653,
+      "technical_indicators": {
+        "ma5": 54.39621753309295,
+        "ma10": 52.735544935915826,
+        "ma20": 53.55339910077411,
+        "ma60": null,
+        "rsi": 56.560276645041064,
+        "macd": -2.50107707183448,
+        "bollinger_bands": {
+          "upper": 58.20882878992246,
+          "middle": 53.55339910077411,
+          "lower": 48.89796941162576,
+          "bandwidth": 0.1738612214096063
+        },
+        "volume": {
+          "average": 5674902.4,
+          "increase_ratio": 1.1581453806148279
+        },
+        "volatility": 0.05871457943180898,
+        "momentum": 0.02794055595831013
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0b\u8dcc\u5e76\u8dcc\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0b\u8dcc"
+        ],
+        "strength_score": 0.08700500904611336,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          48.49,
+          49.47,
+          53.55
+        ],
+        "resistance_levels": [
+          58.61,
+          59.8
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "600276": {
+      "code": "600276",
+      "name": "\u80a1\u7968600276",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 67.71971182490216,
+      "technical_indicators": {
+        "ma5": 66.49787724656241,
+        "ma10": 63.659020054988744,
+        "ma20": 62.34398936368905,
+        "ma60": null,
+        "rsi": 67.77791044677213,
+        "macd": 0.7571731466395875,
+        "bollinger_bands": {
+          "upper": 68.57422273189364,
+          "middle": 62.34398936368905,
+          "lower": 56.113755995484446,
+          "bandwidth": 0.19986636825115547
+        },
+        "volume": {
+          "average": 6089778.333333333,
+          "increase_ratio": 0.5999070573723675
+        },
+        "volatility": 0.043585323700502804,
+        "momentum": 0.061727721804036184
+      },
+      "trend_analysis": {
+        "overall_trend": "\u4e0a\u5347",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "MACD\u4e3a\u6b63\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": 0.408223373948969,
+        "strength_status": "\u504f\u5f3a"
+      },
+      "support_resistance": {
+        "support_levels": [
+          56.64,
+          57.79,
+          62.34
+        ],
+        "resistance_levels": [
+          69.48,
+          70.88
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "600519": {
+      "code": "600519",
+      "name": "\u80a1\u7968600519",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 70.30746260106264,
+      "technical_indicators": {
+        "ma5": 72.84609397634055,
+        "ma10": 76.11341035154632,
+        "ma20": 77.88904453885462,
+        "ma60": null,
+        "rsi": 32.230608198370646,
+        "macd": -1.7975152191276322,
+        "bollinger_bands": {
+          "upper": 85.13339476218475,
+          "middle": 77.88904453885462,
+          "lower": 70.64469431552449,
+          "bandwidth": 0.18601718036780684
+        },
+        "volume": {
+          "average": 5480142.2,
+          "increase_ratio": 0.9863921049347952
+        },
+        "volatility": 0.0486188496140134,
+        "momentum": -0.08783743627363894
+      },
+      "trend_analysis": {
+        "overall_trend": "\u4e0b\u964d",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": -0.6327161734435254,
+        "strength_status": "\u5f31\u52bf"
+      },
+      "support_resistance": {
+        "support_levels": [
+          68.16,
+          69.53
+        ],
+        "resistance_levels": [
+          82.99,
+          84.67,
+          77.89
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    },
+    "601318": {
+      "code": "601318",
+      "name": "\u80a1\u7968601318",
+      "analysis_date": "2025-04-07 00:08:28",
+      "last_price": 101.59888404508972,
+      "technical_indicators": {
+        "ma5": 97.52009648341864,
+        "ma10": 93.01252132812868,
+        "ma20": 88.9653090100957,
+        "ma60": null,
+        "rsi": 72.73537601325816,
+        "macd": 4.042043620286449,
+        "bollinger_bands": {
+          "upper": 100.5255064576445,
+          "middle": 88.9653090100957,
+          "lower": 77.40511156254689,
+          "bandwidth": 0.25988101600899205
+        },
+        "volume": {
+          "average": 5147866.433333334,
+          "increase_ratio": 1.364688282219288
+        },
+        "volatility": 0.05692322699368393,
+        "momentum": 0.04417157479988787
+      },
+      "trend_analysis": {
+        "overall_trend": "\u4e0a\u5347",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "RSI\u5927\u4e8e70\uff0c\u663e\u793a\u5f3a\u52bf",
+          "MACD\u4e3a\u6b63\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0a\u6da8\u5e76\u7a81\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0a\u6da8"
+        ],
+        "strength_score": 0.7312240407597533,
+        "strength_status": "\u5f3a\u52bf"
+      },
+      "support_resistance": {
+        "support_levels": [
+          78.12,
+          79.7,
+          88.97
+        ],
+        "resistance_levels": [
+          101.2,
+          103.24
+        ]
+      },
+      "quantum_influence": 0.3596946305196177
+    }
+  },
+  "stock_predictions": {},
+  "integration_metrics": {
+    "coherence": 0.7334776313558996,
+    "synergy_level": 0.5501082235169247,
+    "accuracy_boost": 0.3667388156779498,
+    "field_strength": 0.9168470391948744,
+    "dimension_count": 11
+  },
+  "overview": "\u5e02\u573a\u5904\u4e8e\u9707\u8361\u9636\u6bb5\u3002\u5e02\u573a\u9707\u8361\u52a0\u5267\uff0c\u65b9\u5411\u4e0d\u660e\u786e\uff0c\u5efa\u8bae\u63a7\u5236\u4ed3\u4f4d\uff0c\u89c2\u671b\u4e3a\u4e3b\u3002\u5e02\u573a\u60c5\u7eea\u4e50\u89c2\uff0c\u9700\u8b66\u60d5\u8fc7\u5ea6\u4e50\u89c2\u5e26\u6765\u7684\u98ce\u9669\n\n\u80a1\u7968\u8d8b\u52bf\u5206\u5e03\uff1a\u4e0a\u5347 2\uff0c\u4e0b\u964d 3\uff0c\u6a2a\u76d8 5\u3002\n\u9884\u6d4b\u7ed3\u679c\u5206\u5e03\uff1a\u4e0a\u6da8 0\uff0c\u4e0b\u8dcc 0\uff0c\u9707\u8361 0\u3002\n\n"
+}

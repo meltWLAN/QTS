@@ -1,0 +1,112 @@
+{
+  "sectors": [
+    {
+      "name": "医药生物",
+      "code": "SW1",
+      "change": 0.19930273017528244,
+      "momentum": 0.19930273017528244,
+      "stocks_count": 78
+    },
+    {
+      "name": "信息技术",
+      "code": "SW2",
+      "change": -1.0069513082323984,
+      "momentum": -1.0069513082323984,
+      "stocks_count": 55
+    },
+    {
+      "name": "金融",
+      "code": "SW3",
+      "change": 0.01828869148027473,
+      "momentum": 0.01828869148027473,
+      "stocks_count": 38
+    },
+    {
+      "name": "消费",
+      "code": "SW4",
+      "change": -0.7310785936650854,
+      "momentum": -0.7310785936650854,
+      "stocks_count": 39
+    },
+    {
+      "name": "材料",
+      "code": "SW5",
+      "change": -2.1246074274522098,
+      "momentum": -2.1246074274522098,
+      "stocks_count": 52
+    },
+    {
+      "name": "能源",
+      "code": "SW6",
+      "change": 0.9471848612703632,
+      "momentum": 0.9471848612703632,
+      "stocks_count": 59
+    },
+    {
+      "name": "房地产",
+      "code": "SW7",
+      "change": 1.2410964319234703,
+      "momentum": 1.2410964319234703,
+      "stocks_count": 20
+    }
+  ],
+  "leading_sectors": [
+    {
+      "name": "房地产",
+      "code": "SW7",
+      "change": 1.2410964319234703,
+      "momentum": 1.2410964319234703,
+      "stocks_count": 20
+    },
+    {
+      "name": "能源",
+      "code": "SW6",
+      "change": 0.9471848612703632,
+      "momentum": 0.9471848612703632,
+      "stocks_count": 59
+    },
+    {
+      "name": "医药生物",
+      "code": "SW1",
+      "change": 0.19930273017528244,
+      "momentum": 0.19930273017528244,
+      "stocks_count": 78
+    },
+    {
+      "name": "金融",
+      "code": "SW3",
+      "change": 0.01828869148027473,
+      "momentum": 0.01828869148027473,
+      "stocks_count": 38
+    }
+  ],
+  "lagging_sectors": [
+    {
+      "name": "材料",
+      "code": "SW5",
+      "change": -2.1246074274522098,
+      "momentum": -2.1246074274522098,
+      "stocks_count": 52
+    },
+    {
+      "name": "信息技术",
+      "code": "SW2",
+      "change": -1.0069513082323984,
+      "momentum": -1.0069513082323984,
+      "stocks_count": 55
+    },
+    {
+      "name": "消费",
+      "code": "SW4",
+      "change": -0.7310785936650854,
+      "momentum": -0.7310785936650854,
+      "stocks_count": 39
+    }
+  ],
+  "avg_sector_correlation": 0.45,
+  "rotation_acceleration": 0.23,
+  "rotation_detected": true,
+  "rotation_strength": 0.68,
+  "rotation_direction": "growth",
+  "timestamp": "2025-04-07 19:36:56"
+}

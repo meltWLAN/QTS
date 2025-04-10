@@ -1,0 +1,131 @@
+2025-04-10 08:07:53,964 - src.utils.logger - INFO - 日志系统初始化完成，日志文件: quantum_backtest_20250410_080753.log
+2025-04-10 08:07:53,964 - src.utils.logger - INFO - =============================================
+2025-04-10 08:07:53,964 - src.utils.logger - INFO - 超神量子爆发策略增强版 - 回测启动
+2025-04-10 08:07:53,964 - src.utils.logger - INFO - 回测区间: 2021-01-01 - 2021-06-30
+2025-04-10 08:07:53,965 - src.utils.logger - INFO - 回测标的: 45 只股票
+2025-04-10 08:07:53,966 - src.utils.logger - INFO - 初始资金: 1,000,000.00
+2025-04-10 08:07:53,968 - src.utils.logger - INFO - =============================================
+2025-04-10 08:07:53,968 - src.utils.logger - INFO - 正在初始化数据源...
+2025-04-10 08:07:53,969 - src.utils.logger - INFO - 策略参数:
+2025-04-10 08:07:53,969 - src.utils.logger - INFO - - lookback_period: 20
+2025-04-10 08:07:53,969 - src.utils.logger - INFO - - max_positions: 10
+2025-04-10 08:07:53,970 - src.utils.logger - INFO - - price_change_threshold: 0.02
+2025-04-10 08:07:53,970 - src.utils.logger - INFO - - volume_change_threshold: 0.8
+2025-04-10 08:07:53,970 - src.utils.logger - INFO - - signal_threshold: 0.3
+2025-04-10 08:07:53,970 - src.utils.logger - INFO - - stop_loss: 0.05
+2025-04-10 08:07:53,971 - src.utils.logger - INFO - - take_profit: 0.1
+2025-04-10 08:07:53,971 - src.utils.logger - INFO - - position_sizing: 0.1
+2025-04-10 08:07:53,971 - src.utils.logger - INFO - - quantum_weights:
+2025-04-10 08:07:53,971 - src.utils.logger - INFO -   * trend_strength: 0.15
+2025-04-10 08:07:53,972 - src.utils.logger - INFO -   * momentum: 0.25
+2025-04-10 08:07:53,972 - src.utils.logger - INFO -   * volatility: 0.2
+2025-04-10 08:07:53,973 - src.utils.logger - INFO -   * volume_structure: 0.2
+2025-04-10 08:07:53,973 - src.utils.logger - INFO -   * reversal_pattern: 0.1
+2025-04-10 08:07:53,974 - src.utils.logger - INFO -   * support_resistance: 0.05
+2025-04-10 08:07:53,974 - src.utils.logger - INFO -   * quantum_oscillator: 0.05
+2025-04-10 08:07:53,975 - src.utils.logger - INFO - 初始化策略...
+2025-04-10 08:07:53,976 - src.utils.logger - INFO - 初始化回测引擎...
+2025-04-10 08:07:53,976 - src.utils.logger - INFO - 开始运行回测...
+2025-04-10 08:07:55,979 - src.utils.logger - INFO - =============================================
+2025-04-10 08:07:55,979 - src.utils.logger - INFO - 回测完成，结果如下:
+2025-04-10 08:07:55,980 - src.utils.logger - INFO - 最终权益: 1,095,032.35
+2025-04-10 08:07:55,980 - src.utils.logger - INFO - 总收益率: 9.50%
+2025-04-10 08:07:55,981 - src.utils.logger - INFO - 年化收益: 19.01%
+2025-04-10 08:07:55,982 - src.utils.logger - INFO - 最大回撤: 6.56%
+2025-04-10 08:07:55,982 - src.utils.logger - INFO - 交易次数: 30
+2025-04-10 08:07:55,983 - src.utils.logger - INFO - 胜率: 70.00%
+2025-04-10 08:07:55,983 - src.utils.logger - INFO - 盈亏比: 1.46
+2025-04-10 08:07:55,983 - src.utils.logger - INFO - 夏普比率: 1.15
+2025-04-10 08:07:55,984 - src.utils.logger - INFO - =============================================
+2025-04-10 08:07:55,984 - src.utils.logger - INFO - 交易明细:
+2025-04-10 08:07:55,984 - src.utils.logger - INFO - 交易 1:
+2025-04-10 08:07:55,985 - src.utils.logger - INFO -   股票: 002572.SZ
+2025-04-10 08:07:55,985 - src.utils.logger - INFO -   买入时间: 2021-05-13
+2025-04-10 08:07:55,985 - src.utils.logger - INFO -   买入价格: 41.38
+2025-04-10 08:07:55,986 - src.utils.logger - INFO -   卖出时间: 2021-06-15
+2025-04-10 08:07:55,986 - src.utils.logger - INFO -   卖出价格: 44.81
+2025-04-10 08:07:55,987 - src.utils.logger - INFO -   收益: 11917.62
+2025-04-10 08:07:55,987 - src.utils.logger - INFO -   收益率: 8.29%
+2025-04-10 08:07:55,987 - src.utils.logger - INFO - 
+2025-04-10 08:07:55,988 - src.utils.logger - INFO - 交易 2:
+2025-04-10 08:07:55,988 - src.utils.logger - INFO -   股票: 300413.SZ
+2025-04-10 08:07:55,989 - src.utils.logger - INFO -   买入时间: 2021-06-09
+2025-04-10 08:07:55,989 - src.utils.logger - INFO -   买入价格: 132.65
+2025-04-10 08:07:55,989 - src.utils.logger - INFO -   卖出时间: 2021-06-18
+2025-04-10 08:07:55,990 - src.utils.logger - INFO -   卖出价格: 136.69
+2025-04-10 08:07:55,990 - src.utils.logger - INFO -   收益: 14899.34
+2025-04-10 08:07:55,991 - src.utils.logger - INFO -   收益率: 3.05%
+2025-04-10 08:07:55,991 - src.utils.logger - INFO - 
+2025-04-10 08:07:55,991 - src.utils.logger - INFO - 交易 3:
+2025-04-10 08:07:55,992 - src.utils.logger - INFO -   股票: 601111.SH
+2025-04-10 08:07:55,992 - src.utils.logger - INFO -   买入时间: 2021-06-27
+2025-04-10 08:07:55,992 - src.utils.logger - INFO -   买入价格: 11.29
+2025-04-10 08:07:55,992 - src.utils.logger - INFO -   卖出时间: 2021-07-11
+2025-04-10 08:07:55,993 - src.utils.logger - INFO -   卖出价格: 11.69
+2025-04-10 08:07:55,993 - src.utils.logger - INFO -   收益: 1877.15
+2025-04-10 08:07:55,993 - src.utils.logger - INFO -   收益率: 3.52%
+2025-04-10 08:07:55,994 - src.utils.logger - INFO - 
+2025-04-10 08:07:55,995 - src.utils.logger - INFO - 交易 4:
+2025-04-10 08:07:55,996 - src.utils.logger - INFO -   股票: 300059.SZ
+2025-04-10 08:07:55,996 - src.utils.logger - INFO -   买入时间: 2021-01-21
+2025-04-10 08:07:55,996 - src.utils.logger - INFO -   买入价格: 86.18
+2025-04-10 08:07:55,997 - src.utils.logger - INFO -   卖出时间: 2021-02-15
+2025-04-10 08:07:55,998 - src.utils.logger - INFO -   卖出价格: 84.59
+2025-04-10 08:07:55,998 - src.utils.logger - INFO -   收益: -5338.60
+2025-04-10 08:07:55,998 - src.utils.logger - INFO -   收益率: -1.84%
+2025-04-10 08:07:55,999 - src.utils.logger - INFO - 
+2025-04-10 08:07:55,999 - src.utils.logger - INFO - 交易 5:
+2025-04-10 08:07:55,999 - src.utils.logger - INFO -   股票: 300014.SZ
+2025-04-10 08:07:55,999 - src.utils.logger - INFO -   买入时间: 2021-03-10
+2025-04-10 08:07:56,000 - src.utils.logger - INFO -   买入价格: 140.05
+2025-04-10 08:07:56,000 - src.utils.logger - INFO -   卖出时间: 2021-03-14
+2025-04-10 08:07:56,001 - src.utils.logger - INFO -   卖出价格: 146.79
+2025-04-10 08:07:56,001 - src.utils.logger - INFO -   收益: 20593.49
+2025-04-10 08:07:56,001 - src.utils.logger - INFO -   收益率: 4.82%
+2025-04-10 08:07:56,001 - src.utils.logger - INFO - 
+2025-04-10 08:07:56,002 - src.utils.logger - INFO - 交易 6:
+2025-04-10 08:07:56,002 - src.utils.logger - INFO -   股票: 601012.SH
+2025-04-10 08:07:56,002 - src.utils.logger - INFO -   买入时间: 2021-05-06
+2025-04-10 08:07:56,002 - src.utils.logger - INFO -   买入价格: 83.22
+2025-04-10 08:07:56,003 - src.utils.logger - INFO -   卖出时间: 2021-05-12
+2025-04-10 08:07:56,003 - src.utils.logger - INFO -   卖出价格: 86.49
+2025-04-10 08:07:56,004 - src.utils.logger - INFO -   收益: 12414.12
+2025-04-10 08:07:56,004 - src.utils.logger - INFO -   收益率: 3.92%
+2025-04-10 08:07:56,006 - src.utils.logger - INFO - 
+2025-04-10 08:07:56,006 - src.utils.logger - INFO - 交易 7:
+2025-04-10 08:07:56,007 - src.utils.logger - INFO -   股票: 002230.SZ
+2025-04-10 08:07:56,007 - src.utils.logger - INFO -   买入时间: 2021-04-21
+2025-04-10 08:07:56,007 - src.utils.logger - INFO -   买入价格: 185.70
+2025-04-10 08:07:56,007 - src.utils.logger - INFO -   卖出时间: 2021-05-07
+2025-04-10 08:07:56,007 - src.utils.logger - INFO -   卖出价格: 200.77
+2025-04-10 08:07:56,008 - src.utils.logger - INFO -   收益: 14228.07
+2025-04-10 08:07:56,008 - src.utils.logger - INFO -   收益率: 8.12%
+2025-04-10 08:07:56,008 - src.utils.logger - INFO - 
+2025-04-10 08:07:56,012 - src.utils.logger - INFO - 交易 8:
+2025-04-10 08:07:56,012 - src.utils.logger - INFO -   股票: 601012.SH
+2025-04-10 08:07:56,013 - src.utils.logger - INFO -   买入时间: 2021-05-01
+2025-04-10 08:07:56,014 - src.utils.logger - INFO -   买入价格: 144.09
+2025-04-10 08:07:56,014 - src.utils.logger - INFO -   卖出时间: 2021-05-09
+2025-04-10 08:07:56,014 - src.utils.logger - INFO -   卖出价格: 138.90
+2025-04-10 08:07:56,015 - src.utils.logger - INFO -   收益: -19149.77
+2025-04-10 08:07:56,015 - src.utils.logger - INFO -   收益率: -3.60%
+2025-04-10 08:07:56,015 - src.utils.logger - INFO - 
+2025-04-10 08:07:56,015 - src.utils.logger - INFO - 交易 9:
+2025-04-10 08:07:56,015 - src.utils.logger - INFO -   股票: 601888.SH
+2025-04-10 08:07:56,015 - src.utils.logger - INFO -   买入时间: 2021-02-01
+2025-04-10 08:07:56,016 - src.utils.logger - INFO -   买入价格: 33.93
+2025-04-10 08:07:56,016 - src.utils.logger - INFO -   卖出时间: 2021-02-24
+2025-04-10 08:07:56,016 - src.utils.logger - INFO -   卖出价格: 35.64
+2025-04-10 08:07:56,016 - src.utils.logger - INFO -   收益: 5294.29
+2025-04-10 08:07:56,016 - src.utils.logger - INFO -   收益率: 5.02%
+2025-04-10 08:07:56,016 - src.utils.logger - INFO - 
+2025-04-10 08:07:56,016 - src.utils.logger - INFO - 交易 10:
+2025-04-10 08:07:56,016 - src.utils.logger - INFO -   股票: 300015.SZ
+2025-04-10 08:07:56,017 - src.utils.logger - INFO -   买入时间: 2021-01-06
+2025-04-10 08:07:56,017 - src.utils.logger - INFO -   买入价格: 128.63
+2025-04-10 08:07:56,017 - src.utils.logger - INFO -   卖出时间: 2021-01-19
+2025-04-10 08:07:56,017 - src.utils.logger - INFO -   卖出价格: 129.03
+2025-04-10 08:07:56,018 - src.utils.logger - INFO -   收益: 884.68
+2025-04-10 08:07:56,018 - src.utils.logger - INFO -   收益率: 0.31%
+2025-04-10 08:07:56,018 - src.utils.logger - INFO - ... 还有 20 笔交易未显示
+2025-04-10 08:07:56,018 - src.utils.logger - INFO - =============================================

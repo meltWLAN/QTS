@@ -1,0 +1,38 @@
+2025-04-10 05:33:08,765 - __main__ - INFO - === 超神量子系统 - 数据集成服务测试 ===
+2025-04-10 05:33:08,839 - test_tushare_integrator - INFO - Tushare API初始化成功
+2025-04-10 05:33:08,839 - __main__ - INFO - 超神数据集成服务初始化完成
+2025-04-10 05:33:08,840 - __main__ - INFO - 开始初始化数据服务...
+2025-04-10 05:33:09,231 - test_tushare_integrator - INFO - Tushare连接测试成功，获取到 10 条交易日历数据
+2025-04-10 05:33:09,232 - __main__ - INFO - 开始预加载市场数据...
+2025-04-10 05:33:09,232 - __main__ - INFO - 预加载指数数据: 000001.SH
+2025-04-10 05:33:09,628 - test_tushare_integrator - INFO - 获取到 21 条指数日线数据
+2025-04-10 05:33:09,629 - __main__ - INFO - 预加载指数数据: 399001.SZ
+2025-04-10 05:33:09,865 - test_tushare_integrator - INFO - 获取到 21 条指数日线数据
+2025-04-10 05:33:09,865 - __main__ - INFO - 预加载指数数据: 000300.SH
+2025-04-10 05:33:10,115 - test_tushare_integrator - INFO - 获取到 21 条指数日线数据
+2025-04-10 05:33:10,116 - __main__ - INFO - 预加载指数数据: 000016.SH
+2025-04-10 05:33:10,273 - test_tushare_integrator - INFO - 获取到 21 条指数日线数据
+2025-04-10 05:33:10,798 - test_tushare_integrator - INFO - 获取到 5408 只股票的基本信息
+2025-04-10 05:33:10,799 - __main__ - INFO - 预加载市场数据完成
+2025-04-10 05:33:10,799 - __main__ - INFO - 数据服务初始化完成
+2025-04-10 05:33:10,799 - __main__ - INFO - 测试获取市场指数数据...
+2025-04-10 05:33:10,800 - __main__ - INFO - 获取市场指数 000001.SH 数据
+2025-04-10 05:33:10,801 - __main__ - INFO - 获取指数 000001.SH 日线数据
+2025-04-10 05:33:10,965 - test_tushare_integrator - INFO - 获取到 16 条指数日线数据
+2025-04-10 05:33:10,966 - __main__ - INFO - 更新缓存数据: 000001.SH_daily_20230101_20230131
+2025-04-10 05:33:10,983 - test_tushare_integrator - INFO - 数据已保存到 data/index_test.csv
+2025-04-10 05:33:10,991 - __main__ - INFO - 测试获取股票数据...
+2025-04-10 05:33:10,992 - __main__ - INFO - 获取股票 600519.SH 日线数据
+2025-04-10 05:33:11,123 - test_tushare_integrator - INFO - 获取到 16 条股票日线数据
+2025-04-10 05:33:11,124 - __main__ - INFO - 更新缓存数据: 600519.SH_daily_20230101_20230131
+2025-04-10 05:33:11,126 - test_tushare_integrator - INFO - 数据已保存到 data/stock_test.csv
+2025-04-10 05:33:11,126 - __main__ - INFO - 测试获取整体市场数据...
+2025-04-10 05:33:11,127 - __main__ - INFO - 获取最新的 stock 市场数据
+2025-04-10 05:33:11,818 - test_tushare_integrator - INFO - 获取到 5393 条股票日线数据
+2025-04-10 05:33:12,651 - test_tushare_integrator - INFO - 获取到 5393 条每日指标数据
+2025-04-10 05:33:12,994 - test_tushare_integrator - INFO - 获取到 7071 条涨跌停价格数据
+2025-04-10 05:33:12,995 - __main__ - INFO - 更新缓存数据: stock_latest
+2025-04-10 05:33:13,109 - test_tushare_integrator - INFO - 数据已保存到 data/daily_market_test.csv
+2025-04-10 05:33:13,350 - test_tushare_integrator - INFO - 数据已保存到 data/daily_basic_market_test.csv
+2025-04-10 05:33:13,431 - test_tushare_integrator - INFO - 数据已保存到 data/stk_limit_market_test.csv
+2025-04-10 05:33:13,431 - __main__ - INFO - === 数据集成服务测试完成 ===

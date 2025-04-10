@@ -1,0 +1,29 @@
+================================================================================
+                              超神量子共生系统 - 高级验证测试报告                               
+================================================================================
+
+验证时间: 2025-04-08 09:29:16
+验证结果: 失败
+
+测试结果摘要:
+--------------------------------------------------------------------------------
+测试项目                                    结果                                      
+--------------------------------------------------------------------------------
+data_format                             通过                                      
+dimension_expander                      通过                                      
+signal_generation                       通过                                      
+backtest_test                           错误: BacktestEngine.__init__() missing 3 required positional arguments: 'start_date', 'end_date', and 'symbols'
+unified_entry_point                     通过                                      
+data_processing_performance             0.01秒                                   
+memory_usage                            0.45 MB                                 
+file_permission_run_supergod_unified.py 正常 (755)                                
+file_permission_tushare_data_connector.py正常 (644)                                
+file_permission_supergod_cockpit.py     正常 (644)                                
+api_key_safety_tushare_data_connector.py可能存在硬编码密钥                               
+api_key_safety_run_supergod_unified.py  可能存在硬编码密钥                               
+
+改进建议:
+- 在 tushare_data_connector.py 中使用环境变量或配置文件管理API密钥
+- 在 run_supergod_unified.py 中使用环境变量或配置文件管理API密钥
+
+================================================================================

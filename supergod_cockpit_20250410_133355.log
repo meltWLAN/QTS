@@ -1,0 +1,4 @@
+2025-04-10 13:33:55,369 - SupergodCockpitLauncher - INFO - 正在启动超神量子共生系统驾驶舱模式...
+2025-04-10 13:33:55,369 - SupergodCockpitLauncher - INFO - 执行启动命令: cd SuperQuantumNetwork/backup_current && python run_supergod.py --mode cockpit
+2025-04-10 13:33:55,369 - SupergodCockpitLauncher - INFO - 切换到目录: /Users/mac/Desktop/QTS/SuperQuantumNetwork/backup_current
+2025-04-10 13:33:55,370 - SupergodCockpitLauncher - INFO - 执行命令: /Users/mac/.pyenv/versions/3.10.12/bin/python run_supergod.py --mode cockpit

@@ -1,0 +1,937 @@
+{
+  "timestamp": "2025-04-07 00:14:01",
+  "market_analysis": {
+    "timestamp": "2025-04-07 00:14:01",
+    "indices": {
+      "SSE": 3432.372871556528,
+      "SZSE": 10542.840012017925,
+      "CSI300": 4239.499303126371
+    },
+    "market_status": "\u718a\u5e02",
+    "analyzed_stocks_count": 10,
+    "up_ratio": 0.5409762651141962,
+    "market_indicators": {
+      "temperature": 0.5247421141013442,
+      "volatility": 0.5192441261805498,
+      "trend_strength": 0.5918752091150633,
+      "sentiment": 0.7927176314782145,
+      "liquidity": 0.928919050699755,
+      "anomaly_index": 0.0
+    },
+    "market_phase": "\u76d8\u6574",
+    "quantum_influence": 0.32884741656839134,
+    "prediction": "\u5e02\u573a\u5904\u4e8e\u5e73\u7a33\u6574\u7406\u9636\u6bb5\uff0c\u53ef\u80fd\u5728\u84c4\u52bf\u5f85\u53d1\u3002\u5e02\u573a\u60c5\u7eea\u4e50\u89c2\uff0c\u9700\u8b66\u60d5\u8fc7\u5ea6\u4e50\u89c2\u5e26\u6765\u7684\u98ce\u9669"
+  },
+  "stock_analyses": {
+    "000001": {
+      "code": "000001",
+      "name": "\u80a1\u7968000001",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 15.918105331802778,
+      "technical_indicators": {
+        "ma5": 15.769305195781545,
+        "ma10": 15.57588724052448,
+        "ma20": 15.705923529761796,
+        "ma60": null,
+        "rsi": 50.58227505140634,
+        "macd": 0.16613614754903416,
+        "bollinger_bands": {
+          "upper": 16.377453428544698,
+          "middle": 15.705923529761796,
+          "lower": 15.034393630978892,
+          "bandwidth": 0.08551294643837956
+        },
+        "volume": {
+          "average": 5297964.1,
+          "increase_ratio": 0.8349486550880932
+        },
+        "volatility": 0.04373230254897568,
+        "momentum": 0.025456271950099474
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "MACD\u4e3a\u6b63\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": 0.09402320324742977,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          14.8,
+          15.1,
+          15.71
+        ],
+        "resistance_levels": [
+          16.49,
+          16.83
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "000333": {
+      "code": "000333",
+      "name": "\u80a1\u7968000333",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 53.24282410772495,
+      "technical_indicators": {
+        "ma5": 51.83201962959352,
+        "ma10": 52.32742786294788,
+        "ma20": 51.35211464074297,
+        "ma60": null,
+        "rsi": 54.884836670089655,
+        "macd": 1.873330689477612,
+        "bollinger_bands": {
+          "upper": 55.29547594257625,
+          "middle": 51.35211464074297,
+          "lower": 47.40875333890968,
+          "bandwidth": 0.15358126259924676
+        },
+        "volume": {
+          "average": 5050372.866666666,
+          "increase_ratio": 1.1443957015820603
+        },
+        "volatility": 0.059201697716925364,
+        "momentum": 0.03685831816239271
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "MACD\u4e3a\u6b63\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0a\u6da8\u5e76\u7a81\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0a\u6da8"
+        ],
+        "strength_score": 0.010373072200711986,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          45.35,
+          46.26,
+          51.35
+        ],
+        "resistance_levels": [
+          53.74,
+          54.82
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "000651": {
+      "code": "000651",
+      "name": "\u80a1\u7968000651",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 65.24274968062187,
+      "technical_indicators": {
+        "ma5": 66.02362808353584,
+        "ma10": 69.27539483428606,
+        "ma20": 72.10444927076871,
+        "ma60": null,
+        "rsi": 33.93580938342458,
+        "macd": -2.724474054207505,
+        "bollinger_bands": {
+          "upper": 80.14276116584251,
+          "middle": 72.10444927076871,
+          "lower": 64.06613737569491,
+          "bandwidth": 0.22296299261334354
+        },
+        "volume": {
+          "average": 5238121.433333334,
+          "increase_ratio": 0.8051441826380467
+        },
+        "volatility": 0.05774526962349868,
+        "momentum": -0.03155639463301252
+      },
+      "trend_analysis": {
+        "overall_trend": "\u4e0b\u964d",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": -0.6229360186166373,
+        "strength_status": "\u5f31\u52bf"
+      },
+      "support_resistance": {
+        "support_levels": [
+          63.33,
+          64.61
+        ],
+        "resistance_levels": [
+          79.12,
+          80.72,
+          72.1
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "000858": {
+      "code": "000858",
+      "name": "\u80a1\u7968000858",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 27.985340293504418,
+      "technical_indicators": {
+        "ma5": 27.054169071793723,
+        "ma10": 26.349164507242694,
+        "ma20": 26.934059841594927,
+        "ma60": null,
+        "rsi": 50.11526088085645,
+        "macd": -0.8619264277901344,
+        "bollinger_bands": {
+          "upper": 29.089267348706286,
+          "middle": 26.934059841594927,
+          "lower": 24.778852334483567,
+          "bandwidth": 0.1600358445616149
+        },
+        "volume": {
+          "average": 5642035.833333333,
+          "increase_ratio": 0.9585435399131195
+        },
+        "volatility": 0.045556912865722894,
+        "momentum": 0.05404258575984899
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0a\u6da8\u5e76\u7a81\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0a\u6da8"
+        ],
+        "strength_score": 0.1112050453212437,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          24.33,
+          24.82,
+          26.93
+        ],
+        "resistance_levels": [
+          28.92,
+          29.5
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "002594": {
+      "code": "002594",
+      "name": "\u80a1\u7968002594",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 59.18938087620872,
+      "technical_indicators": {
+        "ma5": 58.07120857083275,
+        "ma10": 57.990984296439,
+        "ma20": 59.262635003084725,
+        "ma60": null,
+        "rsi": 43.29134904121715,
+        "macd": -0.6963258817083897,
+        "bollinger_bands": {
+          "upper": 62.62815605111231,
+          "middle": 59.262635003084725,
+          "lower": 55.89711395505714,
+          "bandwidth": 0.11357986521700923
+        },
+        "volume": {
+          "average": 5504152.133333334,
+          "increase_ratio": 1.7648879908624617
+        },
+        "volatility": 0.028864152893864663,
+        "momentum": 0.02466685610745767
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0a\u6da8\u5e76\u7a81\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0a\u6da8"
+        ],
+        "strength_score": 0.21024982081333282,
+        "strength_status": "\u504f\u5f3a"
+      },
+      "support_resistance": {
+        "support_levels": [
+          55.36,
+          56.47
+        ],
+        "resistance_levels": [
+          62.84,
+          64.11,
+          59.26
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "600000": {
+      "code": "600000",
+      "name": "\u80a1\u7968600000",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 68.62639810670468,
+      "technical_indicators": {
+        "ma5": 68.83115074307916,
+        "ma10": 68.31261986137747,
+        "ma20": 69.54630853402533,
+        "ma60": null,
+        "rsi": 48.19933361786856,
+        "macd": -3.559449515402818,
+        "bollinger_bands": {
+          "upper": 75.67435743887152,
+          "middle": 69.54630853402533,
+          "lower": 63.41825962917913,
+          "bandwidth": 0.1762293077524903
+        },
+        "volume": {
+          "average": 6222112.5,
+          "increase_ratio": 0.45146660398698996
+        },
+        "volatility": 0.05966108048074141,
+        "momentum": 0.022884870140469582
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0b\u8dcc\u5e76\u8dcc\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0b\u8dcc"
+        ],
+        "strength_score": -0.10258504670571779,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          64.14,
+          65.43
+        ],
+        "resistance_levels": [
+          77.76,
+          79.33,
+          69.55
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "600036": {
+      "code": "600036",
+      "name": "\u80a1\u7968600036",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 47.836670983830885,
+      "technical_indicators": {
+        "ma5": 47.80042846758405,
+        "ma10": 45.92650630406841,
+        "ma20": 44.66698033982419,
+        "ma60": null,
+        "rsi": 64.13711865740638,
+        "macd": 1.4781748609710874,
+        "bollinger_bands": {
+          "upper": 49.1702561421856,
+          "middle": 44.66698033982419,
+          "lower": 40.163704537462785,
+          "bandwidth": 0.20163779902293402
+        },
+        "volume": {
+          "average": 5121629.6,
+          "increase_ratio": 0.5101063926996986
+        },
+        "volatility": 0.048385670274176645,
+        "momentum": 0.023156617136140367
+      },
+      "trend_analysis": {
+        "overall_trend": "\u4e0a\u5347",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0a\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf",
+          "MACD\u4e3a\u6b63\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0a\u5347\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": 0.3828127583381861,
+        "strength_status": "\u504f\u5f3a"
+      },
+      "support_resistance": {
+        "support_levels": [
+          40.04,
+          40.85,
+          44.67
+        ],
+        "resistance_levels": [
+          49.34,
+          50.33
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "600276": {
+      "code": "600276",
+      "name": "\u80a1\u7968600276",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 17.082703807280424,
+      "technical_indicators": {
+        "ma5": 16.88796752689229,
+        "ma10": 16.925272315356516,
+        "ma20": 17.03562250694008,
+        "ma60": null,
+        "rsi": 54.84862997005512,
+        "macd": -0.06883635324625814,
+        "bollinger_bands": {
+          "upper": 17.96391015458792,
+          "middle": 17.03562250694008,
+          "lower": 16.107334859292237,
+          "bandwidth": 0.10898194618596067
+        },
+        "volume": {
+          "average": 5456088.1,
+          "increase_ratio": 1.6257783667386163
+        },
+        "volatility": 0.05048704220905105,
+        "momentum": 0.028011423915152545
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": -0.18250172948033014,
+        "strength_status": "\u4e2d\u6027"
+      },
+      "support_resistance": {
+        "support_levels": [
+          15.95,
+          16.27,
+          17.04
+        ],
+        "resistance_levels": [
+          18.46,
+          18.83
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "600519": {
+      "code": "600519",
+      "name": "\u80a1\u7968600519",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 69.98445030550529,
+      "technical_indicators": {
+        "ma5": 67.98646493619805,
+        "ma10": 69.12667815646094,
+        "ma20": 70.37058698283556,
+        "ma60": null,
+        "rsi": 43.739592028406854,
+        "macd": -1.5283396915590117,
+        "bollinger_bands": {
+          "upper": 74.36822116618592,
+          "middle": 70.37058698283556,
+          "lower": 66.3729527994852,
+          "bandwidth": 0.11361662179471203
+        },
+        "volume": {
+          "average": 4963635.933333334,
+          "increase_ratio": 0.45262163264485455
+        },
+        "volatility": 0.03518684145869898,
+        "momentum": 0.016699796482748885
+      },
+      "trend_analysis": {
+        "overall_trend": "\u4e0b\u964d",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [
+          "\u8fde\u7eed\u4e0a\u6da8\u5e76\u7a81\u7834\u77ed\u671f\u5747\u7ebf\uff0c\u53ef\u80fd\u7ee7\u7eed\u4e0a\u6da8"
+        ],
+        "strength_score": -0.49723270323631213,
+        "strength_status": "\u504f\u5f31"
+      },
+      "support_resistance": {
+        "support_levels": [
+          65.45,
+          66.77
+        ],
+        "resistance_levels": [
+          74.62,
+          76.12,
+          70.37
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    },
+    "601318": {
+      "code": "601318",
+      "name": "\u80a1\u7968601318",
+      "analysis_date": "2025-04-07 00:14:01",
+      "last_price": 27.973631811613604,
+      "technical_indicators": {
+        "ma5": 28.27878863254357,
+        "ma10": 28.405757625626062,
+        "ma20": 28.609494207723003,
+        "ma60": null,
+        "rsi": 46.36495250562717,
+        "macd": -0.33361112666757364,
+        "bollinger_bands": {
+          "upper": 30.082846177304088,
+          "middle": 28.609494207723003,
+          "lower": 27.136142238141918,
+          "bandwidth": 0.10299741469622767
+        },
+        "volume": {
+          "average": 5350606.566666666,
+          "increase_ratio": 1.1952770065066207
+        },
+        "volatility": 0.027256852893206972,
+        "momentum": -0.030529749958777108
+      },
+      "trend_analysis": {
+        "overall_trend": "\u6a2a\u76d8",
+        "trend_signals": [
+          "\u77ed\u671f\u5747\u7ebf\u4f4d\u4e8e\u957f\u671f\u5747\u7ebf\u4e0b\u65b9\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf",
+          "MACD\u4e3a\u8d1f\uff0c\u53ef\u80fd\u5904\u4e8e\u4e0b\u964d\u8d8b\u52bf"
+        ],
+        "reversal_signals": [],
+        "strength_score": -0.38073110865312904,
+        "strength_status": "\u504f\u5f31"
+      },
+      "support_resistance": {
+        "support_levels": [
+          26.56,
+          27.09
+        ],
+        "resistance_levels": [
+          30.15,
+          30.76,
+          28.61
+        ]
+      },
+      "quantum_influence": 0.312132133147545
+    }
+  },
+  "stock_predictions": {
+    "000001": {
+      "code": "000001",
+      "name": "\u80a1\u7968000001",
+      "last_price": 15.918105331802778,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 16.166080032102787,
+          "change": 0.01557815425461337,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 16.144811405359246,
+          "change": -0.0013156328993365607,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 16.3356399508365,
+          "change": 0.011819806418668284,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 16.485376076099108,
+          "change": 0.009166223405587474,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 16.641961196136517,
+          "change": 0.009498425714681158,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": 4.547374510002444,
+      "trend": "\u4e0a\u6da8",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "000333": {
+      "code": "000333",
+      "name": "\u80a1\u7968000333",
+      "last_price": 53.24282410772495,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 53.370221067020665,
+          "change": 0.0023927536044661005,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 52.596297700784426,
+          "change": -0.01450103354948383,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 52.52447250004708,
+          "change": -0.0013655942314789852,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 52.313367335392385,
+          "change": -0.004019177244559796,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 52.12048926123696,
+          "change": -0.003686974935466112,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": -2.1079551381744777,
+      "trend": "\u4e0b\u8dcc",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "000651": {
+      "code": "000651",
+      "name": "\u80a1\u7968000651",
+      "last_price": 65.24274968062187,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 62.03101029522279,
+          "change": -0.049227529512800676,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 57.9294382203339,
+          "change": -0.06612131666675061,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 54.859996111909545,
+          "change": -0.05298587734874576,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 51.807615532791,
+          "change": -0.05563946036182657,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 48.942278371422155,
+          "change": -0.055307258052732886,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": -24.98434138504928,
+      "trend": "\u4e0b\u8dcc",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "000858": {
+      "code": "000858",
+      "name": "\u80a1\u7968000858",
+      "last_price": 27.985340293504418,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 28.6855252692986,
+          "change": 0.025019705619112986,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 28.918621508767295,
+          "change": 0.008125918465163057,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 29.533470667261213,
+          "change": 0.021261357783167904,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 30.083022837616582,
+          "change": 0.018607774770087092,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 30.65279460063351,
+          "change": 0.018939977079180777,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": 9.531612905733455,
+      "trend": "\u4e0a\u6da8",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "002594": {
+      "code": "002594",
+      "name": "\u80a1\u7968002594",
+      "last_price": 59.18938087620872,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 59.26543917470277,
+          "change": 0.001284999055035269,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 58.34037749303572,
+          "change": -0.015608788098914663,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 58.1960813914855,
+          "change": -0.0024733487809098166,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 57.89771405151383,
+          "change": -0.005126931793990627,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 57.62011017484291,
+          "change": -0.004794729484896943,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": -2.651270680880846,
+      "trend": "\u4e0b\u8dcc",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "600000": {
+      "code": "600000",
+      "name": "\u80a1\u7968600000",
+      "last_price": 68.62639810670468,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 69.18473199086408,
+          "change": 0.00813584713117635,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 68.57881625759643,
+          "change": -0.00875794002277358,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 68.87901997743185,
+          "change": 0.004377499295231265,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 68.99776164146952,
+          "change": 0.0017239162821504539,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 69.13962922193478,
+          "change": 0.0020561185912441374,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": 0.7478625272334671,
+      "trend": "\u9707\u8361",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "600036": {
+      "code": "600036",
+      "name": "\u80a1\u7968600036",
+      "last_price": 47.836670983830885,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 50.340204425331045,
+          "change": 0.052335026455883116,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 52.124323656877436,
+          "change": 0.035441239301933186,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 54.6563501754392,
+          "change": 0.04857667861993803,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 57.16633897006776,
+          "change": 0.04592309560685722,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 59.810585009892485,
+          "change": 0.046255297915950906,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": 25.030826309190424,
+      "trend": "\u4e0a\u6da8",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "600276": {
+      "code": "600276",
+      "name": "\u80a1\u7968600276",
+      "last_price": 17.082703807280424,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 17.120223337533645,
+          "change": 0.002196346121579911,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 16.868599864569237,
+          "change": -0.01469744103237002,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 16.84225108266184,
+          "change": -0.0015620017143651746,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 16.77125114622196,
+          "change": -0.004215584727445985,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 16.706121964386952,
+          "change": -0.0038833824183523015,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": -2.2044627545024675,
+      "trend": "\u4e0b\u8dcc",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "600519": {
+      "code": "600519",
+      "name": "\u80a1\u7968600519",
+      "last_price": 69.98445030550529,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 68.9996530180978,
+          "change": -0.014071658534267456,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 66.86304801006006,
+          "change": -0.030965445688217387,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 65.67087943810886,
+          "change": -0.01783000637021254,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 64.32570410925888,
+          "change": -0.020483589383293352,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 63.029451946932774,
+          "change": -0.020151387074199667,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": -9.937919535284834,
+      "trend": "\u4e0b\u8dcc",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    },
+    "601318": {
+      "code": "601318",
+      "name": "\u80a1\u7968601318",
+      "last_price": 27.973631811613604,
+      "predictions": [
+        {
+          "date": "2025-04-07",
+          "price": 27.972304404328504,
+          "change": -4.7452089669272786e-05,
+          "confidence": 0.7835421963407032
+        },
+        {
+          "date": "2025-04-08",
+          "price": 27.49841890321943,
+          "change": -0.016941239243619205,
+          "confidence": 0.7051879767066329
+        },
+        {
+          "date": "2025-04-09",
+          "price": 27.393765422603046,
+          "change": -0.0038057999256143585,
+          "confidence": 0.6268337570725626
+        },
+        {
+          "date": "2025-04-10",
+          "price": 27.216818601605667,
+          "change": -0.006459382938695169,
+          "confidence": 0.5484795374384922
+        },
+        {
+          "date": "2025-04-11",
+          "price": 27.050056237870532,
+          "change": -0.006127180629601485,
+          "confidence": 0.4701253178044219
+        }
+      ],
+      "overall_change": -3.301593371796785,
+      "trend": "\u4e0b\u8dcc",
+      "average_confidence": 0.6268337570725626,
+      "timestamp": "2025-04-07 00:14:01"
+    }
+  },
+  "integration_metrics": {
+    "coherence": 0.6683375707256257,
+    "synergy_level": 0.5012531780442192,
+    "accuracy_boost": 0.33416878536281286,
+    "field_strength": 0.8354219634070321,
+    "dimension_count": 11
+  },
+  "overview": "\u5e02\u573a\u5904\u4e8e\u76d8\u6574\u9636\u6bb5\u3002\u5e02\u573a\u5904\u4e8e\u5e73\u7a33\u6574\u7406\u9636\u6bb5\uff0c\u53ef\u80fd\u5728\u84c4\u52bf\u5f85\u53d1\u3002\u5e02\u573a\u60c5\u7eea\u4e50\u89c2\uff0c\u9700\u8b66\u60d5\u8fc7\u5ea6\u4e50\u89c2\u5e26\u6765\u7684\u98ce\u9669\n\n\u80a1\u7968\u8d8b\u52bf\u5206\u5e03\uff1a\u4e0a\u5347 1\uff0c\u4e0b\u964d 2\uff0c\u6a2a\u76d8 7\u3002\n\u9884\u6d4b\u7ed3\u679c\u5206\u5e03\uff1a\u4e0a\u6da8 3\uff0c\u4e0b\u8dcc 6\uff0c\u9707\u8361 1\u3002\n\n\u5f3a\u52bf\u80a1\u7968 (\u9884\u8ba1\u4e0a\u6da8):\n- \u80a1\u7968600036: \u9884\u8ba1\u53d8\u52a8 25.03%\n\n\u5f31\u52bf\u80a1\u7968 (\u9884\u8ba1\u4e0b\u8dcc):\n- \u80a1\u7968000651: \u9884\u8ba1\u53d8\u52a8 -24.98%\n- \u80a1\u7968600519: \u9884\u8ba1\u53d8\u52a8 -9.94%\n- \u80a1\u7968601318: \u9884\u8ba1\u53d8\u52a8 -3.30%\n"
+}

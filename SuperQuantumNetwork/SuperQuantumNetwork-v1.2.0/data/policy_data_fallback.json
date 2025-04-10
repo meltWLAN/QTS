@@ -1,0 +1,30 @@
+{
+  "policy_news": [
+    {
+      "title": "央行下调逆回购利率，释放流动性",
+      "date": "2025-04-06",
+      "source": "模拟数据",
+      "impact": "positive"
+    },
+    {
+      "title": "证监会：加强对科技创新企业支持",
+      "date": "2025-04-04",
+      "source": "模拟数据",
+      "impact": "positive"
+    },
+    {
+      "title": "财政部：增加地方债发行规模",
+      "date": "2025-04-02",
+      "source": "模拟数据",
+      "impact": "positive"
+    },
+    {
+      "title": "银保监会：加强房地产金融监管",
+      "date": "2025-03-31",
+      "source": "模拟数据",
+      "impact": "negative"
+    }
+  ],
+  "count": 4,
+  "timestamp": "2025-04-07 19:36:56"
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-04-07 00:14:01",
+  "indices": {
+    "SSE": 3432.372871556528,
+    "SZSE": 10542.840012017925,
+    "CSI300": 4239.499303126371
+  },
+  "market_status": "\u718a\u5e02",
+  "trading_volume": 9805163818,
+  "active_stocks": 3244,
+  "up_stocks": 1208,
+  "down_stocks": 814,
+  "flat_stocks": 211
+}

@@ -1,0 +1,10 @@
+2025-04-10 09:37:29,533 - QuantumSystem - INFO - 启动图形界面模式...
+2025-04-10 09:37:30,560 - DataConnector.Tushare数据连接器 - INFO - 获取股票列表成功，共 5408 条记录
+2025-04-10 09:37:30,969 - DataConnector.Tushare数据连接器 - INFO - 获取指数列表成功，共 1016 条记录
+2025-04-10 09:37:30,970 - DataConnector.Tushare数据连接器 - INFO - 基础信息初始化成功
+2025-04-10 09:37:30,973 - DataConnector.Tushare数据连接器 - INFO - 初始化Tushare数据连接器完成
+2025-04-10 09:37:30,973 - QuantumSystem - INFO - 已初始化数据连接器: Tushare数据连接器
+2025-04-10 09:37:32,630 - SupergodCockpit - WARNING - 无法加载部分或全部超神引擎模块: No module named 'supergod_desktop'
+2025-04-10 09:37:32,630 - SupergodCockpit - WARNING - 将使用演示数据
+2025-04-10 09:37:32,647 - QuantumSystem - ERROR - 导入图形界面模块失败: No module named 'event'
+2025-04-10 09:37:32,647 - QuantumSystem - ERROR - 无法启动图形界面，请检查安装

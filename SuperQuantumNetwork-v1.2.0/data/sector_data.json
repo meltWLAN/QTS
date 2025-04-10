@@ -1,0 +1,316 @@
+{
+  "last_update": "2024-04-07",
+  "sectors": [
+    {
+      "id": "BK0001",
+      "name": "半导体",
+      "type": "科技",
+      "performance": {
+        "daily": 1.56,
+        "weekly": 3.75,
+        "monthly": -2.14,
+        "quarterly": 11.82,
+        "yearly": 32.67
+      },
+      "volume": 123456789,
+      "turnover_rate": 2.34,
+      "fund_flow": 23456789,
+      "market_value": 1234567890123,
+      "pe_ratio": 34.56,
+      "pb_ratio": 4.78,
+      "industry_rank": 1,
+      "momentum_score": 82,
+      "stocks": [
+        {"code": "688981", "name": "中芯国际", "weight": 0.12, "change": 2.1},
+        {"code": "688126", "name": "沪硅产业", "weight": 0.08, "change": 1.8},
+        {"code": "603501", "name": "韦尔股份", "weight": 0.07, "change": 0.9},
+        {"code": "002049", "name": "紫光国微", "weight": 0.06, "change": 1.6},
+        {"code": "002371", "name": "北方华创", "weight": 0.05, "change": 2.3}
+      ]
+    },
+    {
+      "id": "BK0002",
+      "name": "新能源汽车",
+      "type": "新能源",
+      "performance": {
+        "daily": 0.78,
+        "weekly": 2.19,
+        "monthly": 5.67,
+        "quarterly": 8.93,
+        "yearly": 28.45
+      },
+      "volume": 234567890,
+      "turnover_rate": 2.87,
+      "fund_flow": 34567890,
+      "market_value": 2345678901234,
+      "pe_ratio": 42.18,
+      "pb_ratio": 5.63,
+      "industry_rank": 2,
+      "momentum_score": 78,
+      "stocks": [
+        {"code": "300750", "name": "宁德时代", "weight": 0.15, "change": 0.5},
+        {"code": "600733", "name": "北汽蓝谷", "weight": 0.08, "change": 0.7},
+        {"code": "002594", "name": "比亚迪", "weight": 0.12, "change": 1.2},
+        {"code": "300014", "name": "亿纬锂能", "weight": 0.06, "change": 0.3},
+        {"code": "002812", "name": "恩捷股份", "weight": 0.05, "change": 1.5}
+      ]
+    },
+    {
+      "id": "BK0003",
+      "name": "医药生物",
+      "type": "医药",
+      "performance": {
+        "daily": -0.35,
+        "weekly": -1.28,
+        "monthly": -3.45,
+        "quarterly": 4.32,
+        "yearly": 7.65
+      },
+      "volume": 123456789,
+      "turnover_rate": 1.54,
+      "fund_flow": -12345678,
+      "market_value": 1987654321098,
+      "pe_ratio": 38.76,
+      "pb_ratio": 4.12,
+      "industry_rank": 5,
+      "momentum_score": 45,
+      "stocks": [
+        {"code": "600276", "name": "恒瑞医药", "weight": 0.09, "change": -0.4},
+        {"code": "300015", "name": "爱尔眼科", "weight": 0.06, "change": -0.2},
+        {"code": "000538", "name": "云南白药", "weight": 0.05, "change": -0.6},
+        {"code": "600196", "name": "复星医药", "weight": 0.04, "change": -0.3},
+        {"code": "300122", "name": "智飞生物", "weight": 0.04, "change": -0.5}
+      ]
+    },
+    {
+      "id": "BK0004",
+      "name": "银行",
+      "type": "金融",
+      "performance": {
+        "daily": 0.23,
+        "weekly": 1.45,
+        "monthly": 2.78,
+        "quarterly": 5.67,
+        "yearly": 12.34
+      },
+      "volume": 345678901,
+      "turnover_rate": 0.95,
+      "fund_flow": 45678901,
+      "market_value": 4567890123456,
+      "pe_ratio": 5.23,
+      "pb_ratio": 0.76,
+      "industry_rank": 8,
+      "momentum_score": 62,
+      "stocks": [
+        {"code": "601398", "name": "工商银行", "weight": 0.11, "change": 0.2},
+        {"code": "601288", "name": "农业银行", "weight": 0.10, "change": 0.3},
+        {"code": "601939", "name": "建设银行", "weight": 0.10, "change": 0.2},
+        {"code": "601988", "name": "中国银行", "weight": 0.09, "change": 0.1},
+        {"code": "600036", "name": "招商银行", "weight": 0.08, "change": 0.4}
+      ]
+    },
+    {
+      "id": "BK0005",
+      "name": "房地产",
+      "type": "周期",
+      "performance": {
+        "daily": -0.65,
+        "weekly": -2.34,
+        "monthly": -5.67,
+        "quarterly": -12.34,
+        "yearly": -23.45
+      },
+      "volume": 234567890,
+      "turnover_rate": 1.23,
+      "fund_flow": -23456789,
+      "market_value": 876543210987,
+      "pe_ratio": 8.76,
+      "pb_ratio": 0.87,
+      "industry_rank": 12,
+      "momentum_score": 23,
+      "stocks": [
+        {"code": "600048", "name": "保利发展", "weight": 0.08, "change": -0.7},
+        {"code": "000002", "name": "万科A", "weight": 0.07, "change": -0.8},
+        {"code": "001979", "name": "招商蛇口", "weight": 0.05, "change": -0.5},
+        {"code": "600606", "name": "绿地控股", "weight": 0.04, "change": -0.6},
+        {"code": "600340", "name": "华夏幸福", "weight": 0.03, "change": -0.9}
+      ]
+    },
+    {
+      "id": "BK0006",
+      "name": "钢铁",
+      "type": "周期",
+      "performance": {
+        "daily": 0.87,
+        "weekly": 2.34,
+        "monthly": 4.56,
+        "quarterly": 6.78,
+        "yearly": 15.67
+      },
+      "volume": 123456789,
+      "turnover_rate": 1.67,
+      "fund_flow": 12345678,
+      "market_value": 654321098765,
+      "pe_ratio": 6.78,
+      "pb_ratio": 0.78,
+      "industry_rank": 6,
+      "momentum_score": 67,
+      "stocks": [
+        {"code": "600019", "name": "宝钢股份", "weight": 0.09, "change": 0.8},
+        {"code": "000708", "name": "中信特钢", "weight": 0.07, "change": 1.0},
+        {"code": "002756", "name": "永兴材料", "weight": 0.05, "change": 0.7},
+        {"code": "600507", "name": "方大特钢", "weight": 0.04, "change": 0.9},
+        {"code": "600782", "name": "新钢股份", "weight": 0.03, "change": 0.6}
+      ]
+    },
+    {
+      "id": "BK0007",
+      "name": "光伏",
+      "type": "新能源",
+      "performance": {
+        "daily": 1.23,
+        "weekly": 3.45,
+        "monthly": 6.78,
+        "quarterly": 12.34,
+        "yearly": 34.56
+      },
+      "volume": 234567890,
+      "turnover_rate": 2.54,
+      "fund_flow": 34567890,
+      "market_value": 1357924680123,
+      "pe_ratio": 32.45,
+      "pb_ratio": 4.32,
+      "industry_rank": 3,
+      "momentum_score": 76,
+      "stocks": [
+        {"code": "601012", "name": "隆基绿能", "weight": 0.14, "change": 1.5},
+        {"code": "002459", "name": "晶澳科技", "weight": 0.09, "change": 1.2},
+        {"code": "600438", "name": "通威股份", "weight": 0.08, "change": 1.3},
+        {"code": "601865", "name": "福莱特", "weight": 0.05, "change": 0.9},
+        {"code": "600732", "name": "爱旭股份", "weight": 0.04, "change": 1.0}
+      ]
+    },
+    {
+      "id": "BK0008",
+      "name": "食品饮料",
+      "type": "消费",
+      "performance": {
+        "daily": 0.12,
+        "weekly": 0.67,
+        "monthly": 1.23,
+        "quarterly": 3.45,
+        "yearly": 9.87
+      },
+      "volume": 123456789,
+      "turnover_rate": 1.12,
+      "fund_flow": 9876543,
+      "market_value": 2468135790123,
+      "pe_ratio": 28.76,
+      "pb_ratio": 6.54,
+      "industry_rank": 7,
+      "momentum_score": 58,
+      "stocks": [
+        {"code": "600519", "name": "贵州茅台", "weight": 0.20, "change": 0.1},
+        {"code": "000858", "name": "五粮液", "weight": 0.12, "change": 0.2},
+        {"code": "603288", "name": "海天味业", "weight": 0.08, "change": 0.3},
+        {"code": "600887", "name": "伊利股份", "weight": 0.07, "change": 0.0},
+        {"code": "603369", "name": "今世缘", "weight": 0.05, "change": 0.1}
+      ]
+    },
+    {
+      "id": "BK0009",
+      "name": "电子设备",
+      "type": "科技",
+      "performance": {
+        "daily": 1.34,
+        "weekly": 3.21,
+        "monthly": 5.67,
+        "quarterly": 9.87,
+        "yearly": 27.65
+      },
+      "volume": 234567890,
+      "turnover_rate": 2.67,
+      "fund_flow": 23456789,
+      "market_value": 1234567890123,
+      "pe_ratio": 36.78,
+      "pb_ratio": 5.12,
+      "industry_rank": 4,
+      "momentum_score": 73,
+      "stocks": [
+        {"code": "002415", "name": "海康威视", "weight": 0.10, "change": 1.3},
+        {"code": "002475", "name": "立讯精密", "weight": 0.09, "change": 1.5},
+        {"code": "002241", "name": "歌尔股份", "weight": 0.07, "change": 1.2},
+        {"code": "002384", "name": "东山精密", "weight": 0.05, "change": 1.4},
+        {"code": "603501", "name": "韦尔股份", "weight": 0.05, "change": 1.6}
+      ]
+    },
+    {
+      "id": "BK0010",
+      "name": "基建",
+      "type": "周期",
+      "performance": {
+        "daily": 0.76,
+        "weekly": 1.98,
+        "monthly": 3.45,
+        "quarterly": 7.89,
+        "yearly": 18.76
+      },
+      "volume": 123456789,
+      "turnover_rate": 1.45,
+      "fund_flow": 12345678,
+      "market_value": 987654321098,
+      "pe_ratio": 12.34,
+      "pb_ratio": 1.23,
+      "industry_rank": 5,
+      "momentum_score": 65,
+      "stocks": [
+        {"code": "601669", "name": "中国电建", "weight": 0.07, "change": 0.8},
+        {"code": "601390", "name": "中国中铁", "weight": 0.06, "change": 0.7},
+        {"code": "601800", "name": "中国交建", "weight": 0.06, "change": 0.6},
+        {"code": "601618", "name": "中国中冶", "weight": 0.05, "change": 0.8},
+        {"code": "601668", "name": "中国建筑", "weight": 0.05, "change": 0.9}
+      ]
+    }
+  ],
+  "sector_rotation": {
+    "leading_sectors": ["半导体", "光伏", "新能源汽车"],
+    "rising_sectors": ["钢铁", "基建", "电子设备"],
+    "lagging_sectors": ["银行", "食品饮料"],
+    "falling_sectors": ["医药生物", "房地产"],
+    "rotation_index": 0.67,
+    "breadth_index": 0.58,
+    "consistency_index": 0.72
+  },
+  "industry_groups": {
+    "科技": {
+      "performance": 0.72,
+      "momentum": 0.78,
+      "trend": "rising"
+    },
+    "新能源": {
+      "performance": 0.85,
+      "momentum": 0.82,
+      "trend": "rising"
+    },
+    "医药": {
+      "performance": 0.43,
+      "momentum": 0.39,
+      "trend": "falling"
+    },
+    "金融": {
+      "performance": 0.56,
+      "momentum": 0.54,
+      "trend": "stable"
+    },
+    "消费": {
+      "performance": 0.52,
+      "momentum": 0.48,
+      "trend": "stable"
+    },
+    "周期": {
+      "performance": 0.63,
+      "momentum": 0.68,
+      "trend": "rising"
+    }
+  }
+} 

@@ -1,0 +1,10 @@
+2025-04-10 16:38:34,194 - QuantumCoreLauncher - INFO - 正在启动超神量子核心...
+2025-04-10 16:38:34,202 - quantum_core.event_driven_coordinator - INFO - 运行时环境初始化完成
+2025-04-10 16:38:34,202 - QuantumCoreLauncher - INFO - 注册核心组件...
+2025-04-10 16:38:34,287 - quantum_core.event_system - INFO - 量子事件系统初始化完成
+2025-04-10 16:38:34,287 - quantum_core.event_driven_coordinator - INFO - 组件'event_system'已注册
+2025-04-10 16:38:34,289 - QuantumCoreLauncher - ERROR - 启动失败: cannot import name 'MarketDataPipeline' from 'quantum_core.data_pipeline' (/Users/mac/Desktop/QTS/quantum_core/data_pipeline.py)
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/QTS/launch_quantum_core.py", line 58, in main
+    from quantum_core.data_pipeline import MarketDataPipeline
+ImportError: cannot import name 'MarketDataPipeline' from 'quantum_core.data_pipeline' (/Users/mac/Desktop/QTS/quantum_core/data_pipeline.py)

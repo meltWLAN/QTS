@@ -1,0 +1,13 @@
+2025-04-10 16:39:59,685 - QuantumCoreLauncher - INFO - 正在启动超神量子核心...
+2025-04-10 16:39:59,707 - quantum_core.event_driven_coordinator - INFO - 运行时环境初始化完成
+2025-04-10 16:39:59,707 - QuantumCoreLauncher - INFO - 注册核心组件...
+2025-04-10 16:40:00,423 - quantum_core.event_system - INFO - 量子事件系统初始化完成
+2025-04-10 16:40:00,424 - quantum_core.event_driven_coordinator - INFO - 组件'event_system'已注册
+2025-04-10 16:40:04,781 - DataPipeline.MarketData - INFO - 数据流水线[MarketData]初始化完成
+2025-04-10 16:40:04,785 - MarketDataPipeline - INFO - 市场数据流水线初始化完成
+2025-04-10 16:40:04,788 - quantum_core.event_driven_coordinator - INFO - 组件'data_pipeline'已注册
+2025-04-10 16:40:04,789 - QuantumCoreLauncher - ERROR - 启动失败: cannot import name 'QuantumBackend' from 'quantum_core.quantum_backend' (/Users/mac/Desktop/QTS/quantum_core/quantum_backend.py)
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/QTS/launch_quantum_core.py", line 63, in main
+    from quantum_core.quantum_backend import QuantumBackend
+ImportError: cannot import name 'QuantumBackend' from 'quantum_core.quantum_backend' (/Users/mac/Desktop/QTS/quantum_core/quantum_backend.py)

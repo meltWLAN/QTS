@@ -1,0 +1,419 @@
+#!/usr/bin/env python3
+"""
+超神量子共生系统 - Tushare数据连接器
+使用Tushare Pro API获取真实市场数据
+"""
+
+import os
+import time
+import logging
+import pandas as pd
+import numpy as np
+from datetime import datetime, timedelta
+
+# 设置日志
+logger = logging.getLogger("TushareConnector")
+
+class TushareDataConnector:
+    """Tushare数据连接器 - 负责从Tushare获取真实市场数据"""
+    
+    def __init__(self, token="0e65a5c636112dc9d9af5ccc93ef06c55987805b9467db0866185a10"):
+        """
+        初始化Tushare数据连接器
+        
+        参数:
+            token: Tushare Pro API的访问令牌
+        """
+        self.token = token
+        self.pro = None
+        self.initialized = False
+        
+        # 尝试初始化Tushare
+        self._init_tushare()
+    
+    def _init_tushare(self):
+        """初始化Tushare"""
+        try:
+            import tushare as ts
+            ts.set_token(self.token)
+            self.pro = ts.pro_api()
+            self.initialized = True
+            logger.info("Tushare Pro API初始化成功")
+        except ImportError:
+            logger.error("未安装tushare库。请使用 pip install tushare 安装")
+        except Exception as e:
+            logger.error(f"Tushare初始化失败: {str(e)}")
+    
+    def get_market_data(self, code="000001.SH", start_date=None, end_date=None, retry=3):
+        """
+        获取市场数据
+        
+        参数:
+            code: 股票或指数代码
+            start_date: 开始日期，格式YYYYMMDD，默认为30天前
+            end_date: 结束日期，格式YYYYMMDD，默认为今天
+            retry: 重试次数
+            
+        返回:
+            DataFrame: 市场数据
+        """
+        if not self.initialized:
+            logger.error("Tushare未初始化")
+            return None
+        
+        # 设置默认日期
+        if end_date is None:
+            end_date = datetime.now().strftime('%Y%m%d')
+        if start_date is None:
+            start_dt = datetime.now() - timedelta(days=30)
+            start_date = start_dt.strftime('%Y%m%d')
+        
+        logger.info(f"获取市场数据: {code}, 从 {start_date} 到 {end_date}")
+        
+        # 判断是指数还是股票
+        if code.endswith(('.SH', '.SZ', '.BJ')):
+            return self._get_index_data(code, start_date, end_date, retry)
+        else:
+            return self._get_stock_data(code, start_date, end_date, retry)
+    
+    def _get_index_data(self, code, start_date, end_date, retry=3):
+        """获取指数数据"""
+        for i in range(retry):
+            try:
+                # 移除后缀以适应Tushare API
+                index_code = code.split('.')[0]
+                market = 'SSE' if code.endswith('.SH') else 'SZSE' if code.endswith('.SZ') else 'BJSE'
+                
+                # 获取指数日线数据
+                df = self.pro.index_daily(ts_code=f"{index_code}.{market}", 
+                                           start_date=start_date, 
+                                           end_date=end_date)
+                
+                # 检查是否成功获取数据
+                if df is not None and not df.empty:
+                    # 标准化列名
+                    df = df.rename(columns={
+                        'ts_code': 'code',
+                        'trade_date': 'date',
+                        'pct_chg': 'change_pct',
+                        'amount': 'turnover'
+                    })
+                    
+                    # 转换日期格式并设置为索引
+                    df['date'] = pd.to_datetime(df['date'])
+                    df = df.sort_values('date')
+                    df.set_index('date', inplace=True)
+                    
+                    logger.info(f"成功获取指数 {code} 的数据，共 {len(df)} 条记录")
+                    return df
+                else:
+                    logger.warning(f"获取指数 {code} 数据失败，尝试第 {i+1}/{retry} 次")
+                    time.sleep(1)
+            except Exception as e:
+                logger.error(f"获取指数 {code} 数据时出错: {str(e)}，尝试第 {i+1}/{retry} 次")
+                time.sleep(1)
+        
+        logger.error(f"获取指数 {code} 数据失败，已重试 {retry} 次")
+        return None
+    
+    def _get_stock_data(self, code, start_date, end_date, retry=3):
+        """获取股票数据"""
+        for i in range(retry):
+            try:
+                # 获取股票日线数据
+                df = self.pro.daily(ts_code=code, 
+                                     start_date=start_date, 
+                                     end_date=end_date)
+                
+                # 获取基本面数据
+                daily_basic = self.pro.daily_basic(ts_code=code, 
+                                                    start_date=start_date, 
+                                                    end_date=end_date,
+                                                    fields='ts_code,trade_date,turnover_rate,pe,pb,total_mv')
+                
+                # 检查是否成功获取数据
+                if df is not None and not df.empty:
+                    # 标准化列名
+                    df = df.rename(columns={
+                        'ts_code': 'code',
+                        'trade_date': 'date',
+                        'pct_chg': 'change_pct',
+                        'amount': 'turnover'
+                    })
+                    
+                    # 合并基本面数据
+                    if daily_basic is not None and not daily_basic.empty:
+                        daily_basic = daily_basic.rename(columns={'trade_date': 'date'})
+                        df = pd.merge(df, daily_basic, on=['code', 'date'], how='left')
+                    
+                    # 转换日期格式并设置为索引
+                    df['date'] = pd.to_datetime(df['date'])
+                    df = df.sort_values('date')
+                    df.set_index('date', inplace=True)
+                    
+                    logger.info(f"成功获取股票 {code} 的数据，共 {len(df)} 条记录")
+                    return df
+                else:
+                    logger.warning(f"获取股票 {code} 数据失败，尝试第 {i+1}/{retry} 次")
+                    time.sleep(1)
+            except Exception as e:
+                logger.error(f"获取股票 {code} 数据时出错: {str(e)}，尝试第 {i+1}/{retry} 次")
+                time.sleep(1)
+        
+        logger.error(f"获取股票 {code} 数据失败，已重试 {retry} 次")
+        return None
+    
+    def get_sector_data(self, date=None):
+        """
+        获取板块数据
+        
+        参数:
+            date: 日期，格式YYYYMMDD，默认为最近交易日
+            
+        返回:
+            dict: 板块数据
+        """
+        if not self.initialized:
+            logger.error("Tushare未初始化")
+            return None
+        
+        # 设置默认日期
+        if date is None:
+            date = datetime.now().strftime('%Y%m%d')
+        
+        logger.info(f"获取板块数据：{date}")
+        
+        try:
+            # 获取行业板块列表
+            sectors = self.pro.index_classify(level='L1', src='SW')
+            
+            # 板块指数数据
+            sector_data = {}
+            leading_sectors = []
+            lagging_sectors = []
+            
+            # 获取各个板块的最新数据
+            for _, row in sectors.iterrows():
+                sector_code = row['index_code']
+                sector_name = row['industry_name']
+                
+                # 获取板块指数近期数据
+                df = self.pro.sw_daily(ts_code=sector_code, 
+                                        start_date=(datetime.strptime(date, '%Y%m%d') - timedelta(days=10)).strftime('%Y%m%d'), 
+                                        end_date=date)
+                
+                if df is not None and not df.empty:
+                    df = df.sort_values('trade_date')
+                    recent_data = df.iloc[-1]
+                    
+                    # 计算10日涨跌幅
+                    if len(df) > 1:
+                        days_chg = (recent_data['close'] / df.iloc[0]['close'] - 1) * 100
+                    else:
+                        days_chg = recent_data['pct_change']
+                    
+                    # 计算板块动量
+                    momentum = df['pct_change'].mean() + days_chg / 10
+                    
+                    # 添加到板块数据
+                    sector_info = {
+                        'name': sector_name,
+                        'code': sector_code,
+                        'close': float(recent_data['close']),
+                        'change': float(recent_data['pct_change']),
+                        'days_chg': float(days_chg),
+                        'momentum': float(momentum),
+                        'pe': float(recent_data['pe']) if 'pe' in recent_data else 0,
+                        'pb': float(recent_data['pb']) if 'pb' in recent_data else 0
+                    }
+                    
+                    sector_data[sector_code] = sector_info
+                    
+                    # 根据动量分类领先和滞后板块
+                    if momentum > 0:
+                        leading_sectors.append(sector_info)
+                    else:
+                        lagging_sectors.append(sector_info)
+            
+            # 按动量排序
+            leading_sectors = sorted(leading_sectors, key=lambda x: x['momentum'], reverse=True)
+            lagging_sectors = sorted(lagging_sectors, key=lambda x: x['momentum'])
+            
+            # 计算平均相关性和轮动加速度（示例计算方法）
+            avg_correlation = 0.5 + np.random.random() * 0.3  # 实际中应该使用正确计算方法
+            rotation_acceleration = np.random.random() * 0.5   # 实际中应该使用正确计算方法
+            
+            # 组装返回数据
+            result = {
+                'sectors': list(sector_data.values()),
+                'leading_sectors': leading_sectors[:5],  # 取前5名
+                'lagging_sectors': lagging_sectors[:5],  # 取后5名
+                'avg_sector_correlation': avg_correlation,
+                'rotation_acceleration': rotation_acceleration,
+                'rotation_detected': len(leading_sectors) > 3,
+                'rotation_strength': 0.6 + np.random.random() * 0.3,
+                'rotation_direction': 'cyclical' if np.random.random() > 0.5 else 'defensive'
+            }
+            
+            logger.info(f"成功获取板块数据，共 {len(sector_data)} 个板块")
+            return result
+        
+        except Exception as e:
+            logger.error(f"获取板块数据失败: {str(e)}")
+            return None
+    
+    def get_policy_news(self, start_date=None, end_date=None):
+        """
+        获取政策新闻数据
+        
+        参数:
+            start_date: 开始日期，格式YYYYMMDD，默认为7天前
+            end_date: 结束日期，格式YYYYMMDD，默认为今天
+            
+        返回:
+            list: 政策新闻列表
+        """
+        if not self.initialized:
+            logger.error("Tushare未初始化")
+            return None
+        
+        # 设置默认日期
+        if end_date is None:
+            end_date = datetime.now().strftime('%Y%m%d')
+        if start_date is None:
+            start_dt = datetime.now() - timedelta(days=7)
+            start_date = start_dt.strftime('%Y%m%d')
+        
+        logger.info(f"获取政策新闻: 从 {start_date} 到 {end_date}")
+        
+        try:
+            # 获取新闻数据
+            news = self.pro.news(src='sina', start_date=start_date, end_date=end_date)
+            
+            # 过滤与政策相关的新闻
+            policy_keywords = ['政策', '央行', '证监会', '银保监会', '国务院', '财政部', '发改委', 
+                            '货币政策', '财政政策', '监管', '降息', '降准', '利率', '改革']
+            
+            policy_news = []
+            if news is not None and not news.empty:
+                for _, row in news.iterrows():
+                    title = row['title']
+                    content = row['content']
+                    
+                    # 检查是否包含政策关键词
+                    is_policy_related = any(keyword in (title + content) for keyword in policy_keywords)
+                    
+                    if is_policy_related:
+                        policy_news.append({
+                            'date': row['datetime'][:10],
+                            'title': title,
+                            'content': content[:200] + '...' if len(content) > 200 else content,
+                            'source': row['src']
+                        })
+            
+            logger.info(f"成功获取政策新闻，共 {len(policy_news)} 条")
+            
+            # 创建政策事件数据（简化版，实际应该基于政策新闻进行分析）
+            policy_events = self._extract_policy_events(policy_news)
+            
+            return {
+                'policy_news': policy_news,
+                'policy_events': policy_events
+            }
+        
+        except Exception as e:
+            logger.error(f"获取政策新闻失败: {str(e)}")
+            return {
+                'policy_news': [],
+                'policy_events': []
+            }
+    
+    def _extract_policy_events(self, policy_news):
+        """从政策新闻中提取政策事件"""
+        policy_events = []
+        
+        # 简单示例：根据关键词和日期分组整合事件
+        event_keywords = {
+            'monetary': ['央行', '货币政策', '降息', '降准', '利率', 'MLF', 'LPR', '公开市场操作'],
+            'fiscal': ['财政部', '财政政策', '减税', '降费', '专项债', '财政支出'],
+            'regulatory': ['证监会', '银保监会', '监管', '退市', '上市', 'IPO', '科创板', '注册制'],
+            'reform': ['改革', '开放', '创新', '转型升级', '营商环境', '国企改革'],
+            'foreign': ['外资', '开放', 'QFII', '外汇', '汇率', '国际收支']
+        }
+        
+        # 按日期分组新闻
+        news_by_date = {}
+        for news in policy_news:
+            date = news['date']
+            if date not in news_by_date:
+                news_by_date[date] = []
+            news_by_date[date].append(news)
+        
+        # 对每个日期的新闻，提取政策事件
+        for date, news_list in news_by_date.items():
+            # 检查每个政策类型的关键词出现频率
+            event_type_counts = {event_type: 0 for event_type in event_keywords}
+            
+            for news in news_list:
+                content = news['title'] + ' ' + news['content']
+                for event_type, keywords in event_keywords.items():
+                    for keyword in keywords:
+                        if keyword in content:
+                            event_type_counts[event_type] += 1
+            
+            # 提取当日主要政策事件类型
+            main_event_types = [event_type for event_type, count in event_type_counts.items() if count > 0]
+            
+            if main_event_types:
+                # 创建事件描述
+                event_description = "、".join([self._get_event_type_name(event_type) for event_type in main_event_types])
+                
+                # 添加到政策事件列表
+                policy_events.append({
+                    'date': date,
+                    'event_types': main_event_types,
+                    'description': f"{date}日{event_description}相关政策出台",
+                    'news_count': len(news_list),
+                    'significance': min(len(main_event_types) * 0.3 + 0.1, 1.0)
+                })
+        
+        return policy_events
+    
+    def _get_event_type_name(self, event_type):
+        """获取事件类型的中文名称"""
+        event_type_names = {
+            'monetary': '货币政策',
+            'fiscal': '财政政策',
+            'regulatory': '监管政策',
+            'reform': '改革政策',
+            'foreign': '外资政策'
+        }
+        return event_type_names.get(event_type, event_type)
+
+# 测试函数
+def test_tushare_connector():
+    """测试Tushare数据连接器"""
+    connector = TushareDataConnector()
+    
+    # 测试获取市场数据
+    market_data = connector.get_market_data(code="000001.SH")
+    print(f"获取到上证指数数据: {market_data.shape if market_data is not None else None}")
+    
+    # 测试获取板块数据
+    sector_data = connector.get_sector_data()
+    print(f"获取到板块数据: {len(sector_data['sectors']) if sector_data else 0} 个板块")
+    
+    # 测试获取政策新闻
+    policy_data = connector.get_policy_news()
+    print(f"获取到政策新闻: {len(policy_data['policy_news']) if policy_data else 0} 条")
+    print(f"提取到政策事件: {len(policy_data['policy_events']) if policy_data else 0} 个")
+
+if __name__ == "__main__":
+    # 配置日志
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+    
+    # 测试连接器
+    test_tushare_connector() 

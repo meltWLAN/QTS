@@ -1,0 +1,22 @@
+2025-04-10 21:17:38,455 [INFO] SupergodDesktopLauncher: ==================================================
+2025-04-10 21:17:38,456 [INFO] SupergodDesktopLauncher: 超神量子共生系统 - 桌面版启动器
+2025-04-10 21:17:38,456 [INFO] SupergodDesktopLauncher: ==================================================
+2025-04-10 21:17:38,475 [INFO] SupergodDesktopLauncher: 切换到目录: /Users/mac/Desktop/QTS/SuperQuantumNetwork/backup_current
+2025-04-10 21:17:50,073 [INFO] SupergodDesktopLauncher: 成功导入桌面版模块
+2025-04-10 21:17:50,073 [INFO] SupergodDesktopLauncher: 正在启动桌面版应用...
+2025-04-10 21:17:51,287 [INFO] SupergodDesktop: 正在加载演示数据...
+2025-04-10 21:17:51,292 [INFO] SupergodDesktop: 超神量子共生系统 - 桌面版已加载
+2025-04-10 21:17:51,306 [INFO] SupergodDesktop: 已加载系统配置: /Users/mac/.supergod_config.json
+2025-04-10 21:17:51,325 [INFO] SupergodDesktop: 欢迎使用超神量子共生系统 - 桌面版
+2025-04-10 21:17:51,331 [INFO] SupergodDesktop: 系统版本: 1.0.0
+2025-04-10 21:17:51,332 [INFO] SupergodDesktop: 时间: 2025-04-10 21:17:51
+2025-04-10 21:17:51,333 [INFO] SupergodDesktop: 输入'help'查看可用命令
+2025-04-10 21:17:51,335 [INFO] SupergodDesktop: 已加载系统配置: /Users/mac/.supergod_config.json
+2025-04-10 21:17:51,336 [INFO] SupergodDesktop: [成功] 欢迎使用超神量子共生系统 - 桌面版
+2025-04-10 21:17:51,336 [INFO] SupergodDesktop: 系统版本: 1.0.0
+2025-04-10 21:17:51,339 [INFO] SupergodDesktop: 时间: 2025-04-10 21:17:51
+2025-04-10 21:17:51,340 [INFO] SupergodDesktop: 输入'help'查看可用命令
+2025-04-10 21:17:51,533 [INFO] SupergodDesktop: [成功] 数据加载完成，共 262 条记录
+2025-04-10 21:17:51,786 [INFO] SupergodDesktop: 市场数据表已更新，显示 100 条记录
+2025-04-10 21:17:51,790 [INFO] SupergodDesktop: 更新图表，此功能尚未完全实现
+2025-04-10 21:17:54,241 [INFO] SupergodDesktopLauncher: 桌面版应用启动成功

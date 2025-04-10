@@ -1,0 +1,9 @@
+2025-04-10 20:44:06,111 - QuantumDesktop.ConfigManager - INFO - 配置文件不存在，使用默认配置
+2025-04-10 20:44:06,115 - QuantumDesktop.ConfigManager - INFO - 配置保存成功
+2025-04-10 20:44:06,115 - QuantumDesktop.ConfigManager - INFO - 配置管理器初始化完成，配置路径: /Users/mac/.quantum_desktop/config.json
+2025-04-10 20:44:06,119 - QuantumDesktop.StyleManager - INFO - 样式管理器初始化完成
+2025-04-10 20:44:06,120 - QuantumDesktop.StyleManager - INFO - 应用主题: dark
+2025-04-10 20:44:08,571 - QuantumDesktop.SystemManager - INFO - 系统管理器初始化完成
+2025-04-10 20:44:08,723 - QuantumDesktop.ComponentStatusWidget - INFO - 组件状态小部件初始化完成
+2025-04-10 20:44:08,822 - QuantumDesktop.DashboardPanel - INFO - 仪表盘面板初始化完成
+2025-04-10 20:44:08,856 - QuantumDesktop.QuantumCircuitPanel - INFO - 量子电路面板初始化完成

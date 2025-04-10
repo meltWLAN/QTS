@@ -1,0 +1,166 @@
+2025-04-10 06:42:04,922 - __main__ - INFO - 启动量子爆发增强策略回测
+2025-04-10 06:42:04,923 - __main__ - INFO - 使用Tushare API Token: 0e65a...85a10
+2025-04-10 06:42:04,923 - __main__ - INFO - 初始化Tushare数据处理器
+2025-04-10 06:42:04,946 - data - INFO - 加载 9 个指数 和 28 只股票
+2025-04-10 06:42:05,247 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:05,307 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:05,456 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:05,543 - data - INFO - 成功加载股票 001979.SZ 的数据，共 168 条记录
+2025-04-10 06:42:05,552 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:05,808 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:05,948 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:06,044 - data - INFO - 成功加载股票 002001.SZ 的数据，共 178 条记录
+2025-04-10 06:42:06,048 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:06,105 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:06,242 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:06,304 - data - INFO - 成功加载股票 002027.SZ 的数据，共 178 条记录
+2025-04-10 06:42:06,310 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:06,441 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:06,588 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:06,701 - data - INFO - 成功加载股票 002032.SZ 的数据，共 178 条记录
+2025-04-10 06:42:06,717 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:06,795 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:06,908 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:06,984 - data - INFO - 成功加载股票 002129.SZ 的数据，共 178 条记录
+2025-04-10 06:42:06,988 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:07,046 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:07,138 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:07,200 - data - INFO - 成功加载股票 002142.SZ 的数据，共 178 条记录
+2025-04-10 06:42:07,206 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:07,295 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:07,400 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:07,595 - data - INFO - 成功加载股票 002230.SZ 的数据，共 178 条记录
+2025-04-10 06:42:07,603 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:07,888 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:07,991 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:08,108 - data - INFO - 成功加载股票 002236.SZ 的数据，共 178 条记录
+2025-04-10 06:42:08,113 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:08,245 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:08,407 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:08,566 - data - INFO - 成功加载股票 002304.SZ 的数据，共 178 条记录
+2025-04-10 06:42:08,575 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:08,700 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:08,789 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:08,866 - data - INFO - 成功加载股票 002311.SZ 的数据，共 178 条记录
+2025-04-10 06:42:08,879 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:08,961 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:09,099 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:09,267 - data - INFO - 成功加载股票 600000.SH 的数据，共 178 条记录
+2025-04-10 06:42:09,281 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:09,362 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:09,451 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:09,497 - data - INFO - 成功加载股票 600009.SH 的数据，共 178 条记录
+2025-04-10 06:42:09,503 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:09,592 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:09,639 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:09,714 - data - INFO - 成功加载股票 600031.SH 的数据，共 178 条记录
+2025-04-10 06:42:09,717 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:09,803 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:09,888 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:09,997 - data - INFO - 成功加载股票 600036.SH 的数据，共 178 条记录
+2025-04-10 06:42:10,004 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:10,100 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:10,237 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:10,291 - data - INFO - 成功加载股票 600196.SH 的数据，共 178 条记录
+2025-04-10 06:42:10,298 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:10,353 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:10,398 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:10,484 - data - INFO - 成功加载股票 600276.SH 的数据，共 178 条记录
+2025-04-10 06:42:10,514 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:10,596 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:10,687 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:10,738 - data - INFO - 成功加载股票 600519.SH 的数据，共 178 条记录
+2025-04-10 06:42:10,743 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:10,897 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:11,046 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:11,118 - data - INFO - 成功加载股票 600585.SH 的数据，共 178 条记录
+2025-04-10 06:42:11,128 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:11,187 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:11,237 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:11,301 - data - INFO - 成功加载股票 600690.SH 的数据，共 178 条记录
+2025-04-10 06:42:11,326 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:11,488 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:11,549 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:11,614 - data - INFO - 成功加载股票 600887.SH 的数据，共 178 条记录
+2025-04-10 06:42:11,619 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:11,838 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:11,894 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:12,040 - data - INFO - 成功加载股票 601012.SH 的数据，共 178 条记录
+2025-04-10 06:42:12,045 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:12,149 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:12,296 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:12,380 - data - INFO - 成功加载股票 601088.SH 的数据，共 178 条记录
+2025-04-10 06:42:12,389 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:12,457 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:12,537 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:12,593 - data - INFO - 成功加载股票 601166.SH 的数据，共 178 条记录
+2025-04-10 06:42:12,597 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:12,698 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:12,789 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:12,840 - data - INFO - 成功加载股票 601318.SH 的数据，共 178 条记录
+2025-04-10 06:42:12,846 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:12,890 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:12,944 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:13,035 - data - INFO - 成功加载股票 601398.SH 的数据，共 178 条记录
+2025-04-10 06:42:13,057 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:13,145 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:13,196 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:13,258 - data - INFO - 成功加载股票 601601.SH 的数据，共 178 条记录
+2025-04-10 06:42:13,265 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:13,337 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:13,387 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:13,446 - data - INFO - 成功加载股票 601688.SH 的数据，共 178 条记录
+2025-04-10 06:42:13,455 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:13,499 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily HTTP/1.1" 307 0
+2025-04-10 06:42:13,547 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:13,672 - data - INFO - 成功加载股票 601888.SH 的数据，共 178 条记录
+2025-04-10 06:42:13,677 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:13,738 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:13,801 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:13,934 - data - INFO - 成功加载指数 000001.SH 的数据，共 178 条记录
+2025-04-10 06:42:13,939 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:13,992 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:14,047 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:14,129 - data - INFO - 成功加载指数 399001.SZ 的数据，共 178 条记录
+2025-04-10 06:42:14,139 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:14,204 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:14,348 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 None
+2025-04-10 06:42:14,431 - data - INFO - 成功加载指数 000300.SH 的数据，共 178 条记录
+2025-04-10 06:42:14,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:14,510 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:14,588 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 227
+2025-04-10 06:42:14,603 - data - WARNING - 无法获取指数 000001.SZ 的数据，可能是积分不足或API权限限制
+2025-04-10 06:42:14,615 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:14,745 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:14,990 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 227
+2025-04-10 06:42:14,996 - data - WARNING - 无法获取指数 000002.SZ 的数据，可能是积分不足或API权限限制
+2025-04-10 06:42:15,004 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:15,359 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:15,490 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 227
+2025-04-10 06:42:15,495 - data - WARNING - 无法获取指数 000063.SZ 的数据，可能是积分不足或API权限限制
+2025-04-10 06:42:15,502 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:15,595 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:15,648 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 227
+2025-04-10 06:42:15,654 - data - WARNING - 无法获取指数 000333.SZ 的数据，可能是积分不足或API权限限制
+2025-04-10 06:42:15,659 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:15,737 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:15,792 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 227
+2025-04-10 06:42:15,799 - data - WARNING - 无法获取指数 000651.SZ 的数据，可能是积分不足或API权限限制
+2025-04-10 06:42:15,808 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.waditu.com:80
+2025-04-10 06:42:15,898 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily HTTP/1.1" 307 0
+2025-04-10 06:42:15,992 - urllib3.connectionpool - DEBUG - http://api.waditu.com:80 "POST /dataapi/index_daily/ HTTP/1.1" 200 227
+2025-04-10 06:42:15,997 - data - WARNING - 无法获取指数 000858.SZ 的数据，可能是积分不足或API权限限制
+2025-04-10 06:42:15,997 - data - INFO - 数据加载完成，共加载 31 只股票/指数的数据
+2025-04-10 06:42:15,998 - data - INFO - 数据处理器已重置
+2025-04-10 06:42:15,998 - data - INFO - Tushare数据处理器已重置
+2025-04-10 06:42:15,999 - __main__ - INFO - 初始化量子爆发增强策略
+2025-04-10 06:42:15,999 - __main__ - INFO - 检查QuantumBurstStrategyEnhanced初始化参数
+2025-04-10 06:42:15,999 - quantum_burst_strategy_enhanced - INFO - 初始化超神量子爆发策略增强版
+2025-04-10 06:42:15,999 - __main__ - INFO - 初始化组合管理器
+2025-04-10 06:42:15,999 - __main__ - INFO - 初始化回测引擎
+2025-04-10 06:42:15,999 - __main__ - ERROR - 回测过程中发生错误: BacktestEngine.__init__() got an unexpected keyword argument 'data_handler'
+2025-04-10 06:42:16,000 - __main__ - ERROR - Traceback (most recent call last):
+  File "/Users/mac/Desktop/QTS/SuperQuantumNetwork/test_enhanced_strategy.py", line 140, in main
+    backtest = BacktestEngine(
+TypeError: BacktestEngine.__init__() got an unexpected keyword argument 'data_handler'
+

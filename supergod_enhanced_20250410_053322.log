@@ -1,0 +1,29 @@
+2025-04-10 05:33:25,435 - SuperGodEnhanced - INFO - 启动超神量子共生系统 - 增强版
+2025-04-10 05:33:25,441 - SuperGodEnhanced - INFO - 运行模式: analyze
+2025-04-10 05:33:25,443 - SuperGodEnhanced - INFO - 策略类型: enhanced
+2025-04-10 05:33:25,444 - SuperGodEnhanced - INFO - 初始化数据集成服务...
+2025-04-10 05:33:25,461 - test_tushare_integrator - INFO - Tushare API初始化成功
+2025-04-10 05:33:25,462 - data_integration - INFO - 超神数据集成服务初始化完成
+2025-04-10 05:33:25,462 - data_integration - INFO - 开始初始化数据服务...
+2025-04-10 05:33:25,776 - test_tushare_integrator - INFO - Tushare连接测试成功，获取到 10 条交易日历数据
+2025-04-10 05:33:25,777 - data_integration - INFO - 开始预加载市场数据...
+2025-04-10 05:33:25,777 - data_integration - INFO - 预加载指数数据: 000001.SH
+2025-04-10 05:33:25,967 - test_tushare_integrator - INFO - 获取到 21 条指数日线数据
+2025-04-10 05:33:25,968 - data_integration - INFO - 预加载指数数据: 399001.SZ
+2025-04-10 05:33:26,070 - test_tushare_integrator - INFO - 获取到 21 条指数日线数据
+2025-04-10 05:33:26,070 - data_integration - INFO - 预加载指数数据: 000300.SH
+2025-04-10 05:33:26,169 - test_tushare_integrator - INFO - 获取到 21 条指数日线数据
+2025-04-10 05:33:26,170 - data_integration - INFO - 预加载指数数据: 000016.SH
+2025-04-10 05:33:26,366 - test_tushare_integrator - INFO - 获取到 21 条指数日线数据
+2025-04-10 05:33:27,142 - test_tushare_integrator - INFO - 获取到 5408 只股票的基本信息
+2025-04-10 05:33:27,142 - data_integration - INFO - 预加载市场数据完成
+2025-04-10 05:33:27,142 - data_integration - INFO - 数据服务初始化完成
+2025-04-10 05:33:27,142 - SuperGodEnhanced - INFO - 开始市场分析...
+2025-04-10 05:33:27,142 - data_integration - INFO - 获取市场指数 000001.SH 数据
+2025-04-10 05:33:27,142 - data_integration - INFO - 获取指数 000001.SH 日线数据
+2025-04-10 05:33:27,481 - test_tushare_integrator - INFO - 获取到 59 条指数日线数据
+2025-04-10 05:33:27,481 - data_integration - INFO - 更新缓存数据: 000001.SH_daily_20230101_20230331
+2025-04-10 05:33:27,482 - SuperGodEnhanced - INFO - 获取到 59 条指数数据
+2025-04-10 05:33:27,495 - test_tushare_integrator - INFO - 数据已保存到 data/000001.SH_analysis.csv
+2025-04-10 05:33:27,496 - SuperGodEnhanced - INFO - 市场分析完成
+2025-04-10 05:33:27,496 - SuperGodEnhanced - INFO - 超神量子共生系统 - 增强版 运行完成

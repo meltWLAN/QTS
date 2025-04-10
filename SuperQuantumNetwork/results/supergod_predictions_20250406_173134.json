@@ -1,0 +1,455 @@
+{
+  "300383.SZ": {
+    "dates": [
+      "2025-04-07",
+      "2025-04-08",
+      "2025-04-09",
+      "2025-04-10",
+      "2025-04-11",
+      "2025-04-12",
+      "2025-04-13",
+      "2025-04-14",
+      "2025-04-15",
+      "2025-04-16"
+    ],
+    "predictions": [
+      84.23,
+      84.54,
+      81.08,
+      78.27,
+      79.46,
+      75.35,
+      76.11,
+      73.1,
+      71.84,
+      66.7
+    ],
+    "is_accurate": true,
+    "confidence": 74.08,
+    "market_sentiment": -0.38,
+    "market_momentum": -0.01,
+    "market_trend": -0.68,
+    "quantum_influence": {
+      "coherence": 0.7408,
+      "superposition": 0.6689,
+      "entanglement": 0.6667
+    },
+    "market_insights": {
+      "trend": {
+        "type": "明显下跌",
+        "strength": 2.0812062210613798,
+        "direction": "下跌"
+      },
+      "volatility": {
+        "level": 3.1623516892602592,
+        "evaluation": "高波动"
+      },
+      "timing": {
+        "entry": {
+          "day": 6,
+          "price": 75.35,
+          "confidence": 0.655776929700286,
+          "reason": "局部价格低点"
+        },
+        "exit": {
+          "day": 2,
+          "price": 84.54,
+          "confidence": 0.7435479825688897,
+          "reason": "局部价格高点"
+        }
+      },
+      "confidence": 74.08,
+      "quantum_analysis": {
+        "most_probable_state": {
+          "state": 1,
+          "price": 66.7,
+          "probability": 0.1667
+        },
+        "coherence_impact": 0.6295,
+        "superposition_states": 6,
+        "entanglement_strength": 0.6531,
+        "quantum_stability": 0.4111,
+        "collapse_threshold": 0.05,
+        "quantum_states": [
+          {
+            "state": 1,
+            "price": 66.7,
+            "probability": 0.1667
+          },
+          {
+            "state": 6,
+            "price": 66.87,
+            "probability": 0.1658
+          },
+          {
+            "state": 2,
+            "price": 67.76,
+            "probability": 0.1614
+          }
+        ]
+      }
+    }
+  },
+  "603501.SH": {
+    "dates": [
+      "2025-04-07",
+      "2025-04-08",
+      "2025-04-09",
+      "2025-04-10",
+      "2025-04-11",
+      "2025-04-12",
+      "2025-04-13",
+      "2025-04-14",
+      "2025-04-15",
+      "2025-04-16"
+    ],
+    "predictions": [
+      6.17,
+      6.02,
+      5.95,
+      5.92,
+      5.91,
+      5.68,
+      5.66,
+      5.83,
+      5.91,
+      5.99
+    ],
+    "is_accurate": true,
+    "confidence": 74.08,
+    "market_sentiment": -0.38,
+    "market_momentum": -0.01,
+    "market_trend": -0.68,
+    "quantum_influence": {
+      "coherence": 0.7408,
+      "superposition": 0.6689,
+      "entanglement": 0.6667
+    },
+    "market_insights": {
+      "trend": {
+        "type": "轻微下跌",
+        "strength": 0.29173419773095577,
+        "direction": "下跌"
+      },
+      "volatility": {
+        "level": 1.582248379925659,
+        "evaluation": "中等波动"
+      },
+      "timing": {
+        "entry": {
+          "day": 7,
+          "price": 5.66,
+          "confidence": 0.7840142349345737,
+          "reason": "局部价格低点"
+        },
+        "exit": {
+          "day": 10,
+          "confidence": 0.5,
+          "reason": "无明确信号"
+        }
+      },
+      "confidence": 74.08,
+      "quantum_analysis": {
+        "most_probable_state": {
+          "state": 1,
+          "price": 5.99,
+          "probability": 0.1667
+        },
+        "coherence_impact": 0.7024,
+        "superposition_states": 6,
+        "entanglement_strength": 0.6664,
+        "quantum_stability": 0.4681,
+        "collapse_threshold": 0.05,
+        "quantum_states": [
+          {
+            "state": 1,
+            "price": 5.99,
+            "probability": 0.1667
+          },
+          {
+            "state": 2,
+            "price": 5.99,
+            "probability": 0.1665
+          },
+          {
+            "state": 5,
+            "price": 6.04,
+            "probability": 0.1641
+          }
+        ]
+      }
+    }
+  },
+  "301246.SZ": {
+    "dates": [
+      "2025-04-07",
+      "2025-04-08",
+      "2025-04-09",
+      "2025-04-10",
+      "2025-04-11",
+      "2025-04-12",
+      "2025-04-13",
+      "2025-04-14",
+      "2025-04-15",
+      "2025-04-16"
+    ],
+    "predictions": [
+      0.15,
+      0.14,
+      0.14,
+      0.14,
+      0.14,
+      0.13,
+      0.13,
+      0.13,
+      0.13,
+      0.13
+    ],
+    "is_accurate": true,
+    "confidence": 60.04,
+    "market_sentiment": -0.38,
+    "market_momentum": -0.01,
+    "market_trend": -0.68,
+    "quantum_influence": {
+      "coherence": 0.6004,
+      "superposition": 0.5533,
+      "entanglement": 0.5719
+    },
+    "market_insights": {
+      "trend": {
+        "type": "明显下跌",
+        "strength": 1.3333333333333328,
+        "direction": "下跌"
+      },
+      "volatility": {
+        "level": 1.5343915343915335,
+        "evaluation": "中等波动"
+      },
+      "timing": {
+        "entry": {
+          "day": 6,
+          "price": 0.13,
+          "confidence": 0.6004219777697645,
+          "reason": "局部价格低点"
+        },
+        "exit": {
+          "day": 10,
+          "confidence": 0.5,
+          "reason": "无明确信号"
+        }
+      },
+      "confidence": 60.04,
+      "quantum_analysis": {
+        "most_probable_state": {
+          "state": 1,
+          "price": 0.13,
+          "probability": 0.2
+        },
+        "coherence_impact": 0.4875,
+        "superposition_states": 5,
+        "entanglement_strength": 0.6277,
+        "quantum_stability": 0.306,
+        "collapse_threshold": 0.05,
+        "quantum_states": [
+          {
+            "state": 1,
+            "price": 0.13,
+            "probability": 0.2
+          },
+          {
+            "state": 2,
+            "price": 0.13,
+            "probability": 0.1997
+          },
+          {
+            "state": 3,
+            "price": 0.13,
+            "probability": 0.1976
+          }
+        ]
+      }
+    }
+  },
+  "000593.SZ": {
+    "dates": [
+      "2025-04-07",
+      "2025-04-08",
+      "2025-04-09",
+      "2025-04-10",
+      "2025-04-11",
+      "2025-04-12",
+      "2025-04-13",
+      "2025-04-14",
+      "2025-04-15",
+      "2025-04-16"
+    ],
+    "predictions": [
+      1.71,
+      1.71,
+      1.71,
+      1.69,
+      1.63,
+      1.61,
+      1.7,
+      1.73,
+      1.69,
+      1.66
+    ],
+    "is_accurate": true,
+    "confidence": 60.04,
+    "market_sentiment": -0.38,
+    "market_momentum": -0.01,
+    "market_trend": -0.68,
+    "quantum_influence": {
+      "coherence": 0.6004,
+      "superposition": 0.5533,
+      "entanglement": 0.5719
+    },
+    "market_insights": {
+      "trend": {
+        "type": "轻微下跌",
+        "strength": 0.2923976608187137,
+        "direction": "下跌"
+      },
+      "volatility": {
+        "level": 1.9321038908628498,
+        "evaluation": "中等波动"
+      },
+      "timing": {
+        "entry": {
+          "day": 6,
+          "price": 1.61,
+          "confidence": 0.6190686230421174,
+          "reason": "局部价格低点"
+        },
+        "exit": {
+          "day": 8,
+          "price": 1.73,
+          "confidence": 0.6074444570419255,
+          "reason": "局部价格高点"
+        }
+      },
+      "confidence": 60.04,
+      "quantum_analysis": {
+        "most_probable_state": {
+          "state": 1,
+          "price": 1.66,
+          "probability": 0.2
+        },
+        "coherence_impact": 0.5475,
+        "superposition_states": 5,
+        "entanglement_strength": 0.5583,
+        "quantum_stability": 0.3056,
+        "collapse_threshold": 0.05,
+        "quantum_states": [
+          {
+            "state": 1,
+            "price": 1.66,
+            "probability": 0.2
+          },
+          {
+            "state": 5,
+            "price": 1.67,
+            "probability": 0.197
+          },
+          {
+            "state": 4,
+            "price": 1.64,
+            "probability": 0.1963
+          }
+        ]
+      }
+    }
+  },
+  "600861.SH": {
+    "dates": [
+      "2025-04-07",
+      "2025-04-08",
+      "2025-04-09",
+      "2025-04-10",
+      "2025-04-11",
+      "2025-04-12",
+      "2025-04-13",
+      "2025-04-14",
+      "2025-04-15",
+      "2025-04-16"
+    ],
+    "predictions": [
+      22.98,
+      22.58,
+      22.42,
+      21.26,
+      20.98,
+      21.67,
+      22.45,
+      20.98,
+      19.11,
+      21.98
+    ],
+    "is_accurate": true,
+    "confidence": 48.81,
+    "market_sentiment": -0.38,
+    "market_momentum": -0.01,
+    "market_trend": -0.68,
+    "quantum_influence": {
+      "coherence": 0.4881,
+      "superposition": 0.4814,
+      "entanglement": 0.5007
+    },
+    "market_insights": {
+      "trend": {
+        "type": "轻微下跌",
+        "strength": 0.4351610095735422,
+        "direction": "下跌"
+      },
+      "volatility": {
+        "level": 5.14532861136063,
+        "evaluation": "高波动"
+      },
+      "timing": {
+        "entry": {
+          "day": 9,
+          "price": 19.11,
+          "confidence": 0.5614071430885256,
+          "reason": "局部价格低点"
+        },
+        "exit": {
+          "day": 7,
+          "price": 22.45,
+          "confidence": 0.4768450229385438,
+          "reason": "局部价格高点"
+        }
+      },
+      "confidence": 48.81,
+      "quantum_analysis": {
+        "most_probable_state": {
+          "state": 1,
+          "price": 21.98,
+          "probability": 0.25
+        },
+        "coherence_impact": 0.4746,
+        "superposition_states": 4,
+        "entanglement_strength": 0.4954,
+        "quantum_stability": 0.2351,
+        "collapse_threshold": 0.05,
+        "quantum_states": [
+          {
+            "state": 1,
+            "price": 21.98,
+            "probability": 0.25
+          },
+          {
+            "state": 3,
+            "price": 21.83,
+            "probability": 0.2466
+          },
+          {
+            "state": 2,
+            "price": 22.42,
+            "probability": 0.2399
+          }
+        ]
+      }
+    }
+  }
+}
