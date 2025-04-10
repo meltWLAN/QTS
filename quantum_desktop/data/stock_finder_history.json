@@ -1,0 +1,128 @@
+{
+  "status": "success",
+  "timestamp": "2025-04-11 00:03:18",
+  "quantum_power": 100,
+  "market_scope": "全市场",
+  "stocks": [
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "sector": "有色金属",
+      "quantum_score": 96.21576923473307,
+      "expected_gain": 32.45699392511475,
+      "confidence": 89.11506029449937,
+      "timeframe": "短期",
+      "reasons": [
+        "超空间趋势通道形成",
+        "量子态交叉信号确认",
+        "多维度技术指标共振"
+      ],
+      "recommendation": "强烈推荐"
+    },
+    {
+      "code": "603288",
+      "name": "海天味业",
+      "sector": "食品",
+      "quantum_score": 90.20501399911626,
+      "expected_gain": 90.86124913213337,
+      "confidence": 90.36281246821332,
+      "timeframe": "短期",
+      "reasons": [
+        "超神算法检测到主力资金潜伏",
+        "超空间趋势通道形成",
+        "量子波动特征与历史大牛股吻合"
+      ],
+      "recommendation": "推荐"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "sector": "新能源",
+      "quantum_score": 88.81228989007201,
+      "expected_gain": 62.60444512896438,
+      "confidence": 94.81400415222382,
+      "timeframe": "长期",
+      "reasons": [
+        "量子波动特征与历史大牛股吻合",
+        "多维度技术指标共振",
+        "行业景气度量子评分处于高位"
+      ],
+      "recommendation": "推荐"
+    },
+    {
+      "code": "000858",
+      "name": "五粮液",
+      "sector": "白酒",
+      "quantum_score": 88.72442569997432,
+      "expected_gain": 53.657297786505005,
+      "confidence": 95.46239463412225,
+      "timeframe": "短期",
+      "reasons": [
+        "量子态分析显示强势突破形态",
+        "多维度技术指标共振",
+        "行业拐点信号被超神算法捕捉"
+      ],
+      "recommendation": "推荐"
+    },
+    {
+      "code": "600900",
+      "name": "长江电力",
+      "sector": "公用事业",
+      "quantum_score": 88.324559456536,
+      "expected_gain": 44.52568560794296,
+      "confidence": 95.40105563265715,
+      "timeframe": "长期",
+      "reasons": [
+        "行业拐点信号被超神算法捕捉",
+        "行业景气度量子评分处于高位",
+        "多维度市场情绪指标极度看好"
+      ],
+      "recommendation": "推荐"
+    },
+    {
+      "code": "601888",
+      "name": "中国中免",
+      "sector": "免税",
+      "quantum_score": 84.71252572619545,
+      "expected_gain": 86.9287850193764,
+      "confidence": 79.69560794557675,
+      "timeframe": "中期",
+      "reasons": [
+        "超空间市场结构分析显示稀缺性溢价",
+        "多维度技术指标共振",
+        "量子态交叉信号确认"
+      ],
+      "recommendation": "推荐"
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "sector": "半导体",
+      "quantum_score": 81.8814204347695,
+      "expected_gain": 95.28581384767995,
+      "confidence": 95.921334282021,
+      "timeframe": "短期",
+      "reasons": [
+        "多维度市场情绪指标极度看好",
+        "多维度技术指标共振",
+        "量子态交叉信号确认"
+      ],
+      "recommendation": "推荐"
+    },
+    {
+      "code": "600309",
+      "name": "万华化学",
+      "sector": "化工",
+      "quantum_score": 81.71643334294858,
+      "expected_gain": 55.798960195105145,
+      "confidence": 81.50379012811932,
+      "timeframe": "长期",
+      "reasons": [
+        "多维度技术指标共振",
+        "多维度市场情绪指标极度看好",
+        "超神算法检测到主力资金潜伏"
+      ],
+      "recommendation": "推荐"
+    }
+  ]
+}
