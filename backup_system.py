@@ -101,10 +101,20 @@ def create_gitignore(directory):
     logger.info(".gitignore文件创建成功")
 
 def get_system_version():
-    """获取系统版本信息"""
-    now = datetime.datetime.now()
-    version = f"v{now.strftime('%Y%m%d.%H%M%S')}"
-    return version
+    """获取系统版本号"""
+    # 首先尝试从VERSION文件获取
+    version_file = os.path.join(os.path.dirname(__file__), "VERSION")
+    if os.path.exists(version_file):
+        try:
+            with open(version_file, "r") as f:
+                version = f.read().strip()
+                return version
+        except Exception as e:
+            logger.error(f"读取VERSION文件失败: {str(e)}")
+    
+    # 如果VERSION文件不存在或读取失败，生成时间戳版本号
+    timestamp = datetime.datetime.now().strftime("%Y%m%d.%H%M%S")
+    return f"v{timestamp}"
 
 def commit_changes(directory, version):
     """提交变更"""
