@@ -67,7 +67,7 @@ def load_system_config(config_path=None):
     default_config = {
         "system": {
             "name": "超神量子核心系统",
-            "version": "1.3.0-20250413",
+            "version": "1.3.1-20250414",
             "max_threads": 8,
             "log_level": "INFO"
         },

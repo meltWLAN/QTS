@@ -1,0 +1,14 @@
+{
+    "theme": "dark",
+    "auto_start": true,
+    "window": {
+        "width": 1200,
+        "height": 800,
+        "maximized": false
+    },
+    "system": {
+        "log_level": "INFO",
+        "data_dir": "data",
+        "backup_dir": "backup"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "system": {
+        "name": "超神量子核心系统",
+        "version": "2.0.0",
+        "max_threads": 12,
+        "log_level": "INFO"
+    },
+    "quantum": {
+        "backend_type": "simulator",
+        "max_qubits": 32,
+        "optimization_level": 3,
+        "use_gpu": true,
+        "seed": 42,
+        "evolution_level": 3,
+        "circuit_design": {
+            "ai_enabled": true,
+            "auto_optimization": true,
+            "complexity_level": "advanced",
+            "design_style": "adaptive",
+            "quantum_gates_preference": ["h", "cx", "rz", "rx", "ry", "cp"]
+        }
+    },
+    "market_data": {
+        "use_real_data": true,
+        "providers": ["tushare", "yahoo", "eastmoney", "akshare"],
+        "preferred_provider": "tushare",
+        "cache_timeout": 1800,
+        "api_keys": {
+            "tushare": "0e65a5c636112dc9d9af5ccc93ef06c55987805b9467db0866185a10",
+            "alpha_vantage": "your_alpha_vantage_key"
+        }
+    },
+    "strategy": {
+        "default": "quantum_enhanced",
+        "backtest_period": 365,
+        "max_positions": 12,
+        "risk_control": "adaptive",
+        "quantum_power": 0.85
+    },
+    "ui": {
+        "theme": "dark",
+        "font_size": 13,
+        "update_interval": 800,
+        "chart_style": "professional",
+        "default_view": "quantum_analysis"
+    },
+    "advanced": {
+        "enable_auto_optimization": true,
+        "enable_deep_learning": true,
+        "data_fusion_level": 3,
+        "use_cloud_computing": false,
+        "ai_assistant": {
+            "enabled": true,
+            "learning_rate": 0.1,
+            "adaptation_speed": "fast",
+            "suggestions_level": "proactive"
+        }
+    }
+} 
